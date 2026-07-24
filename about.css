@@ -5,6 +5,7 @@
 :root[data-theme="light"] {
   --profile-background: #f7f8fa;
   --profile-surface: #ffffff;
+  --profile-surface-alt: #edf1f6;
 
   --profile-text: #15171a;
   --profile-muted: #646c78;
@@ -20,6 +21,7 @@
 :root[data-theme="dark"] {
   --profile-background: #0b1424;
   --profile-surface: #101b2e;
+  --profile-surface-alt: #0d182a;
 
   --profile-text: #f4f7fb;
   --profile-muted: #afbdd0;
@@ -309,7 +311,7 @@
 
 
 /* =========================================
-   Contact and CV Information
+   Contact and CV
 ========================================= */
 
 .profile-contact-information {
@@ -354,61 +356,11 @@
 
 
 /* =========================================
-   Profile Links
+   Resume Sections
 ========================================= */
 
-.profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-
-  margin-top: 30px;
-}
-
-.profile-links a {
-  min-height: 42px;
-
-  display: inline-flex;
-
-  padding: 0 16px;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 8px;
-
-  border: 1px solid var(--profile-line);
-  border-radius: 6px;
-
-  color: var(--profile-text);
-  background: var(--profile-link-background);
-
-  font-size: 13px;
-  font-weight: 700;
-
-  text-decoration: none;
-
-  transition:
-    color 0.2s ease,
-    border-color 0.2s ease,
-    background-color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.profile-links a:hover {
-  color: var(--primary);
-  background: var(--profile-link-hover);
-
-  transform: translateY(-2px);
-}
-
-
-/* =========================================
-   Education
-========================================= */
-
-.education-section {
-  padding: 90px 0;
+.resume-section {
+  padding: 88px 0;
 
   border-top: 1px solid var(--profile-line);
 
@@ -419,14 +371,23 @@
     background-color 0.25s ease;
 }
 
-.education-grid {
+.resume-section-alt {
+  background: var(--profile-surface-alt);
+}
+
+.resume-grid {
   display: grid;
   grid-template-columns: 240px minmax(0, 1fr);
 
   gap: 70px;
 }
 
-.education-heading > p {
+
+/* =========================================
+   Resume Heading
+========================================= */
+
+.resume-heading > p {
   margin: 0 0 9px;
 
   color: var(--primary);
@@ -436,19 +397,26 @@
   letter-spacing: 2px;
 }
 
-.education-heading h2 {
+.resume-heading h2 {
   margin: 0;
+
+  color: var(--profile-text);
 
   font-size: 29px;
   line-height: 1.2;
   letter-spacing: -1px;
 }
 
-.education-list {
+
+/* =========================================
+   Resume Lists
+========================================= */
+
+.resume-list {
   border-top: 1px solid var(--profile-line);
 }
 
-.education-item {
+.resume-item {
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
 
@@ -459,7 +427,7 @@
   border-bottom: 1px solid var(--profile-line);
 }
 
-.education-date {
+.resume-date {
   color: var(--primary);
 
   font-size: 12px;
@@ -467,22 +435,105 @@
   letter-spacing: 0.4px;
 }
 
-.education-details h3 {
+.resume-details h3 {
   margin: 0;
 
   color: var(--profile-text);
 
   font-size: 20px;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
-.education-details p {
+.resume-organization {
   margin: 5px 0 0;
 
   color: var(--primary);
 
   font-size: 14px;
   font-weight: 700;
+}
+
+
+/* =========================================
+   Publications
+========================================= */
+
+.publication-doi {
+  display: inline-block;
+
+  margin-top: 11px;
+
+  color: var(--profile-muted);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  overflow-wrap: anywhere;
+
+  transition: color 0.2s ease;
+}
+
+.publication-doi:hover {
+  color: var(--primary);
+}
+
+
+/* =========================================
+   Skills
+========================================= */
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  border-top: 1px solid var(--profile-line);
+}
+
+.skill-item {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+
+  align-items: center;
+  gap: 14px;
+
+  padding: 21px 18px 21px 0;
+
+  border-bottom: 1px solid var(--profile-line);
+}
+
+.skill-item:nth-child(odd) {
+  border-right: 1px solid var(--profile-line);
+}
+
+.skill-item:nth-child(even) {
+  padding-left: 24px;
+}
+
+.skill-item span {
+  color: var(--primary);
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.skill-item p {
+  margin: 0;
+
+  color: var(--profile-text);
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* Last skill when number of items is odd */
+
+.skill-item:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+
+  border-right: 0;
 }
 
 
@@ -517,7 +568,7 @@
     width: 130px;
   }
 
-  .education-grid {
+  .resume-grid {
     grid-template-columns: 190px minmax(0, 1fr);
 
     gap: 40px;
@@ -576,20 +627,36 @@
     letter-spacing: -2px;
   }
 
-  .education-section {
+  .resume-section {
     padding: 65px 0;
   }
 
-  .education-grid {
+  .resume-grid {
     grid-template-columns: 1fr;
 
     gap: 28px;
   }
 
-  .education-item {
+  .resume-item {
     grid-template-columns: 1fr;
 
     gap: 8px;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-item:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .skill-item:nth-child(even) {
+    padding-left: 0;
+  }
+
+  .skill-item:last-child:nth-child(odd) {
+    grid-column: auto;
   }
 
   .footer-navigation {
