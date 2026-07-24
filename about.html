@@ -12,10 +12,10 @@
 
   <meta
     name="description"
-    content="About Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
+    content="Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
-  <!-- 저장된 Light / Dark 테마 불러오기 -->
+  <!-- Apply saved Light / Dark theme before rendering -->
   <script>
     (function () {
       const savedTheme = localStorage.getItem("theme");
@@ -56,7 +56,7 @@
           ← Home
         </a>
 
-        <!-- Light / Dark Mode -->
+        <!-- Theme switch -->
         <div
           class="theme-switch"
           role="group"
@@ -109,7 +109,7 @@
 
   <main class="profile-main">
 
-    <!-- Main Profile -->
+    <!-- Profile Overview -->
     <section class="profile-overview">
 
       <div class="profile-container profile-overview-grid">
@@ -149,7 +149,7 @@
         <!-- Profile Information -->
         <div class="profile-information">
 
-          <!-- Name and ID Photo -->
+          <!-- Name and ID photo -->
           <div class="profile-header-block">
 
             <div class="profile-header-text">
@@ -216,7 +216,7 @@
           </p>
 
 
-          <!-- Contact Information -->
+          <!-- Contact and CV Information -->
           <div class="profile-contact-information">
 
             <div class="contact-information-row">
@@ -231,15 +231,20 @@
 
             </div>
 
+
             <div class="contact-information-row">
 
               <span>
-                Location
+                CV
               </span>
 
-              <p>
-                Seoul, Republic of Korea
-              </p>
+              <a
+                href="cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Curriculum Vitae ↗
+              </a>
 
             </div>
 
@@ -281,59 +286,12 @@
     </section>
 
 
-    <!-- Biography -->
-    <section class="resume-section">
-
-      <div class="profile-container resume-grid">
-
-        <div class="resume-section-title">
-
-          <p>
-            PROFILE
-          </p>
-
-          <h2>
-            About Me
-          </h2>
-
-        </div>
-
-
-        <div class="resume-section-content biography-content">
-
-          <p class="biography-lead">
-            I am a graduate student in Mechanical Engineering
-            at Korea University, working on robotic mechanisms
-            that can adapt their shape and configuration.
-          </p>
-
-          <p>
-            My current research focuses on a modular continuum robot
-            with independently lockable segments. The system is
-            designed to generate diverse configurations and maintain
-            its posture without continuous power consumption.
-          </p>
-
-          <p>
-            I am also interested in medical robotics,
-            shape-morphing mechanisms, smart actuators,
-            vision-based robot evaluation, and energy-efficient
-            robotic systems.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
     <!-- Education -->
-    <section class="resume-section">
+    <section class="education-section">
 
-      <div class="profile-container resume-grid">
+      <div class="profile-container education-grid">
 
-        <div class="resume-section-title">
+        <div class="education-heading">
 
           <p>
             BACKGROUND
@@ -346,28 +304,23 @@
         </div>
 
 
-        <div class="resume-section-content">
+        <div class="education-list">
 
           <!-- Korea University -->
-          <article class="resume-item">
+          <article class="education-item">
 
-            <div class="resume-date">
+            <div class="education-date">
               2026 — Present
             </div>
 
-            <div class="resume-details">
+            <div class="education-details">
 
               <h3>
-                Graduate Student in Mechanical Engineering
+                M.S. Student in Mechanical Engineering
               </h3>
 
-              <p class="resume-organization">
-                Korea University
-              </p>
-
               <p>
-                Research in continuum robots, medical robotics,
-                shape-morphing mechanisms, and smart actuators.
+                Korea University
               </p>
 
             </div>
@@ -376,232 +329,27 @@
 
 
           <!-- Konkuk University -->
-          <article class="resume-item">
+          <article class="education-item">
 
-            <div class="resume-date">
-              2026
+            <div class="education-date">
+              2019 — Feb. 2026
             </div>
 
-            <div class="resume-details">
+            <div class="education-details">
 
               <h3>
                 B.S. in Mechanical Engineering
               </h3>
 
-              <p class="resume-organization">
+              <p>
                 Konkuk University
               </p>
 
-              <p>
-                Undergraduate studies in mechanical engineering,
-                robotics, mechanism design, and experimental
-                system development.
-              </p>
-
             </div>
 
           </article>
 
         </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Research Experience -->
-    <section class="resume-section">
-
-      <div class="profile-container resume-grid">
-
-        <div class="resume-section-title">
-
-          <p>
-            EXPERIENCE
-          </p>
-
-          <h2>
-            Research
-          </h2>
-
-        </div>
-
-
-        <div class="resume-section-content">
-
-          <article class="resume-item">
-
-            <div class="resume-date">
-              2026 — Present
-            </div>
-
-            <div class="resume-details">
-
-              <h3>
-                Graduate Researcher
-              </h3>
-
-              <p class="resume-organization">
-                Korea University
-              </p>
-
-              <p>
-                Developing a modular shape-lockable continuum robot
-                with independent segment control and zero-power
-                posture maintenance.
-              </p>
-
-            </div>
-
-          </article>
-
-
-          <article class="resume-item">
-
-            <div class="resume-date">
-              Current
-            </div>
-
-            <div class="resume-details">
-
-              <h3>
-                Vision-Based Robot Evaluation
-              </h3>
-
-              <p class="resume-organization">
-                Robotics Experiment
-              </p>
-
-              <p>
-                Measuring end-tip trajectories, reachable workspace,
-                motion repeatability, and three-dimensional robot
-                configurations using cameras and OpenCV.
-              </p>
-
-            </div>
-
-          </article>
-
-
-          <article class="resume-item">
-
-            <div class="resume-date">
-              Current
-            </div>
-
-            <div class="resume-details">
-
-              <h3>
-                SMA Actuator Characterization
-              </h3>
-
-              <p class="resume-organization">
-                Smart Actuation Research
-              </p>
-
-              <p>
-                Evaluating SMA wire displacement, response time,
-                thermal behavior, repeatability, recovery,
-                and energy consumption.
-              </p>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Research Interests -->
-    <section class="resume-section">
-
-      <div class="profile-container resume-grid">
-
-        <div class="resume-section-title">
-
-          <p>
-            INTERESTS
-          </p>
-
-          <h2>
-            Research Interests
-          </h2>
-
-        </div>
-
-
-        <div class="resume-section-content">
-
-          <div class="research-interest-list">
-
-            <div class="research-interest-item">
-              <span>01</span>
-              <p>Continuum Robots</p>
-            </div>
-
-            <div class="research-interest-item">
-              <span>02</span>
-              <p>Medical Robotics</p>
-            </div>
-
-            <div class="research-interest-item">
-              <span>03</span>
-              <p>Shape-Morphing Mechanisms</p>
-            </div>
-
-            <div class="research-interest-item">
-              <span>04</span>
-              <p>Smart Actuators</p>
-            </div>
-
-            <div class="research-interest-item">
-              <span>05</span>
-              <p>Robot Mechanism Design</p>
-            </div>
-
-            <div class="research-interest-item">
-              <span>06</span>
-              <p>Vision-Based Robot Evaluation</p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Bottom Navigation -->
-    <section class="profile-bottom">
-
-      <div class="profile-container profile-bottom-inner">
-
-        <div>
-
-          <p class="profile-bottom-label">
-            SELECTED WORK
-          </p>
-
-          <h2>
-            Explore my projects
-            and recent research.
-          </h2>
-
-        </div>
-
-        <a
-          class="profile-bottom-button"
-          href="index.html#projects"
-        >
-          View Projects
-          <span aria-hidden="true">→</span>
-        </a>
 
       </div>
 
