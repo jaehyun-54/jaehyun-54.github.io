@@ -1,61 +1,34 @@
 /* =========================================
-   About Page Variables
+   About Page Theme Variables
 ========================================= */
 
 :root[data-theme="light"] {
   --profile-background: #f7f8fa;
   --profile-surface: #ffffff;
-  --profile-surface-alt: #edf1f6;
 
   --profile-text: #15171a;
   --profile-muted: #646c78;
 
   --profile-line: #dfe4eb;
-
   --profile-photo-background: #e7ebf0;
 
   --profile-link-background: #ffffff;
   --profile-link-hover: #edf3fb;
-
-  --profile-bottom-background:
-    linear-gradient(
-      135deg,
-      #eaf2fc,
-      #cedff5
-    );
-
-  --profile-bottom-text: #12213a;
 }
 
 
 :root[data-theme="dark"] {
   --profile-background: #0b1424;
   --profile-surface: #101b2e;
-  --profile-surface-alt: #13223a;
 
   --profile-text: #f4f7fb;
   --profile-muted: #afbdd0;
 
   --profile-line: rgba(182, 204, 235, 0.16);
-
   --profile-photo-background: #17253b;
 
   --profile-link-background: #15243c;
   --profile-link-hover: #1b2f4d;
-
-  --profile-bottom-background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(80, 140, 255, 0.35),
-      transparent 35%
-    ),
-    linear-gradient(
-      135deg,
-      #101d35,
-      #143f78
-    );
-
-  --profile-bottom-text: #ffffff;
 }
 
 
@@ -105,7 +78,7 @@
 
 
 /* =========================================
-   Main Profile
+   Profile Overview
 ========================================= */
 
 .profile-overview {
@@ -116,11 +89,6 @@
   transition: background-color 0.25s ease;
 }
 
-/*
-  전체 구조:
-
-  왼쪽 큰 사진 | 오른쪽 프로필 정보
-*/
 .profile-overview-grid {
   display: grid;
   grid-template-columns: 340px minmax(0, 1fr);
@@ -197,14 +165,9 @@
 
 
 /* =========================================
-   Profile Header
+   Profile Header and ID Photo
 ========================================= */
 
-/*
-  프로필 정보 내부 구조:
-
-  이름·소속 | 오른쪽 작은 증명사진
-*/
 .profile-header-block {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 150px;
@@ -346,7 +309,7 @@
 
 
 /* =========================================
-   Contact Information
+   Contact and CV Information
 ========================================= */
 
 .profile-contact-information {
@@ -372,8 +335,7 @@
   font-size: 13px;
 }
 
-.contact-information-row a,
-.contact-information-row p {
+.contact-information-row a {
   margin: 0;
 
   color: var(--profile-text);
@@ -442,11 +404,11 @@
 
 
 /* =========================================
-   Resume Sections
+   Education
 ========================================= */
 
-.resume-section {
-  padding: 85px 0;
+.education-section {
+  padding: 90px 0;
 
   border-top: 1px solid var(--profile-line);
 
@@ -457,21 +419,14 @@
     background-color 0.25s ease;
 }
 
-.resume-section:nth-of-type(odd) {
-  background: var(--profile-surface);
-}
-
-.resume-grid {
+.education-grid {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 240px minmax(0, 1fr);
 
   gap: 70px;
 }
 
-
-/* Section Title */
-
-.resume-section-title > p {
+.education-heading > p {
   margin: 0 0 9px;
 
   color: var(--primary);
@@ -481,7 +436,7 @@
   letter-spacing: 2px;
 }
 
-.resume-section-title h2 {
+.education-heading h2 {
   margin: 0;
 
   font-size: 29px;
@@ -489,207 +444,45 @@
   letter-spacing: -1px;
 }
 
-
-/* Biography */
-
-.biography-content {
-  color: var(--profile-muted);
-
-  font-size: 16px;
-}
-
-.biography-content p:first-child {
-  margin-top: 0;
-}
-
-.biography-content p:last-child {
-  margin-bottom: 0;
-}
-
-.biography-lead {
-  color: var(--profile-text) !important;
-
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.55;
-}
-
-
-/* Resume List */
-
-.resume-section-content {
+.education-list {
   border-top: 1px solid var(--profile-line);
 }
 
-.resume-item {
+.education-item {
   display: grid;
-  grid-template-columns: 145px 1fr;
+  grid-template-columns: 150px minmax(0, 1fr);
 
   gap: 35px;
 
-  padding: 28px 0;
+  padding: 30px 0;
 
   border-bottom: 1px solid var(--profile-line);
 }
 
-.resume-date {
+.education-date {
   color: var(--primary);
 
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
-.resume-details h3 {
+.education-details h3 {
   margin: 0;
+
+  color: var(--profile-text);
 
   font-size: 20px;
   line-height: 1.35;
 }
 
-.resume-organization {
-  margin: 4px 0 9px;
+.education-details p {
+  margin: 5px 0 0;
 
   color: var(--primary);
 
   font-size: 14px;
   font-weight: 700;
-}
-
-.resume-details p:last-child {
-  margin-bottom: 0;
-
-  color: var(--profile-muted);
-
-  font-size: 15px;
-}
-
-
-/* =========================================
-   Research Interests
-========================================= */
-
-.research-interest-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.research-interest-item {
-  display: grid;
-  grid-template-columns: 38px 1fr;
-
-  align-items: center;
-  gap: 14px;
-
-  padding: 20px 18px 20px 0;
-
-  border-bottom: 1px solid var(--profile-line);
-}
-
-.research-interest-item:nth-child(odd) {
-  border-right: 1px solid var(--profile-line);
-}
-
-.research-interest-item:nth-child(even) {
-  padding-left: 24px;
-}
-
-.research-interest-item span {
-  color: var(--primary);
-
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.research-interest-item p {
-  margin: 0;
-
-  color: var(--profile-text);
-
-  font-size: 16px;
-  font-weight: 700;
-}
-
-
-/* =========================================
-   Bottom Area
-========================================= */
-
-.profile-bottom {
-  padding: 90px 0;
-
-  color: var(--profile-bottom-text);
-  background: var(--profile-bottom-background);
-
-  transition:
-    color 0.25s ease,
-    background 0.25s ease;
-}
-
-.profile-bottom-inner {
-  display: flex;
-
-  align-items: flex-end;
-  justify-content: space-between;
-
-  gap: 60px;
-}
-
-.profile-bottom-label {
-  margin: 0 0 10px;
-
-  color: var(--primary);
-
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-.profile-bottom h2 {
-  max-width: 670px;
-
-  margin: 0;
-
-  font-size: clamp(34px, 5vw, 52px);
-  line-height: 1.14;
-  letter-spacing: -1.8px;
-}
-
-.profile-bottom-button {
-  min-height: 49px;
-
-  display: inline-flex;
-
-  flex-shrink: 0;
-
-  padding: 0 21px;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 13px;
-
-  border: 1px solid currentColor;
-  border-radius: 6px;
-
-  color: var(--profile-bottom-text);
-
-  font-size: 14px;
-  font-weight: 800;
-
-  text-decoration: none;
-
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.profile-bottom-button:hover {
-  color: var(--profile-background);
-  background: var(--profile-bottom-text);
-
-  transform: translateY(-2px);
 }
 
 
@@ -724,8 +517,8 @@
     width: 130px;
   }
 
-  .resume-grid {
-    grid-template-columns: 190px 1fr;
+  .education-grid {
+    grid-template-columns: 190px minmax(0, 1fr);
 
     gap: 40px;
   }
@@ -783,43 +576,20 @@
     letter-spacing: -2px;
   }
 
-  .resume-section {
+  .education-section {
     padding: 65px 0;
   }
 
-  .resume-grid {
+  .education-grid {
     grid-template-columns: 1fr;
 
     gap: 28px;
   }
 
-  .resume-item {
+  .education-item {
     grid-template-columns: 1fr;
 
-    gap: 9px;
-  }
-
-  .research-interest-list {
-    grid-template-columns: 1fr;
-  }
-
-  .research-interest-item:nth-child(odd) {
-    border-right: 0;
-  }
-
-  .research-interest-item:nth-child(even) {
-    padding-left: 0;
-  }
-
-  .profile-bottom {
-    padding: 70px 0;
-  }
-
-  .profile-bottom-inner {
-    align-items: flex-start;
-    flex-direction: column;
-
-    gap: 30px;
+    gap: 8px;
   }
 
   .footer-navigation {
