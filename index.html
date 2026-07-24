@@ -8,30 +8,42 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>Jaehyun Yoon | Robotics Researcher</title>
+  <title>Jaehyun Yoon | About Me</title>
 
   <meta
     name="description"
-    content="Personal research website of Jaehyun Yoon, a mechanical engineering graduate researcher working on robotics."
+    content="Personal portfolio of Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
   <!-- Navigation -->
   <header class="site-header">
     <div class="container header-inner">
 
-      <a class="logo" href="index.html">YJH</a>
+      <a class="logo" href="index.html">
+        YJH
+      </a>
 
       <nav class="main-nav">
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Contact</a>
+        <a
+          class="active"
+          href="index.html"
+          aria-current="page"
+        >
+          About Me
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
       </nav>
 
     </div>
@@ -40,88 +52,87 @@
 
   <main>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-      <div class="container hero-content">
+      <div class="container hero-grid">
 
-        <p class="eyebrow">
-          MECHANICAL ENGINEERING · ROBOTICS
-        </p>
+        <div class="hero-content">
 
-        <h1>
-          Hey, I’m <span>Jaehyun.</span><br>
-        </h1>
+          <p class="eyebrow">
+            MECHANICAL ENGINEERING · ROBOTICS
+          </p>
 
-        <p class="hero-description">
-           I’m a graduate student in Mechanical Engineering at Korea University.<br>
-  My research interests include continuum robots, medical robotics,
-  shape-morphing mechanisms, and smart actuators.
-        </p>
+          <h1>
+            Hey, I’m
+            <span>Jaehyun.</span>
+          </h1>
 
-<div class="hero-buttons">
+          <p class="hero-description">
+            I’m a graduate student in Mechanical Engineering
+            at Korea University.
+          </p>
 
-  <a
-    class="button primary"
-    href="research.html"
-  >
-    View Research
-  </a>
+          <p class="hero-description hero-description-secondary">
+            My research interests include continuum robots,
+            medical robotics, shape-morphing mechanisms,
+            and smart actuators.
+          </p>
 
-  <a
-    class="button secondary"
-    href="projects.html"
-  >
-    View Projects
-  </a>
-
-</div>
-
-      </div>
-    </section>
-
-
-    <!-- Introduction -->
-    <section class="section home-intro">
-      <div class="container">
-
-        <p class="section-label">
-          INTRODUCTION
-        </p>
-
-        <h2>
-          Robots that move, adapt,<br>
-          and hold their shape.
-        </h2>
-
-        <div class="about-grid">
-
-          <div>
-            <p class="large-text">
-              My research explores robotic mechanisms that can adapt
-              their shape and configuration to complex environments.
-            </p>
-          </div>
-
-          <div>
-            <p>
-              My current work focuses on a modular continuum robot
-              with independently lockable segments. The robot can
-              create multiple configurations and maintain its posture
-              without continuous power.
-            </p>
-
-            <p>
-              I also study vision-based workspace evaluation and the
-              displacement, thermal response, repeatability, and energy
-              consumption of SMA-based actuation systems.
-            </p>
+          <div class="hero-buttons">
 
             <a
-              class="text-link"
-              href="about.html"
+              class="button primary"
+              href="projects.html"
             >
-              More About Me →
+              View Projects
             </a>
+
+            <a
+              class="button secondary"
+              href="#contact"
+            >
+              Contact Me
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Right-side visual -->
+        <div class="hero-visual">
+
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="visual-dot dot-one"></div>
+          <div class="visual-dot dot-two"></div>
+
+          <div class="focus-panel">
+
+            <p class="focus-label">
+              CURRENT FOCUS
+            </p>
+
+            <div class="focus-item">
+              <span>01</span>
+              <strong>Continuum Robots</strong>
+            </div>
+
+            <div class="focus-item">
+              <span>02</span>
+              <strong>Medical Robotics</strong>
+            </div>
+
+            <div class="focus-item">
+              <span>03</span>
+              <strong>Shape-Morphing</strong>
+            </div>
+
+            <div class="focus-item">
+              <span>04</span>
+              <strong>Smart Actuators</strong>
+            </div>
+
           </div>
 
         </div>
@@ -130,21 +141,68 @@
     </section>
 
 
-    <!-- Research Areas -->
+    <!-- About -->
+    <section class="section">
+      <div class="container">
+
+        <p class="section-label">
+          ABOUT ME
+        </p>
+
+        <div class="about-layout">
+
+          <div>
+            <h2>
+              Exploring robots that can
+              adapt, transform, and hold
+              their shape.
+            </h2>
+          </div>
+
+          <div class="about-text">
+
+            <p>
+              My research focuses on robotic mechanisms that can
+              adapt their shape and configuration to complex
+              environments.
+            </p>
+
+            <p>
+              I am currently developing a modular continuum robot
+              with independently lockable segments. The system is
+              designed to create diverse configurations and maintain
+              its posture without continuous power consumption.
+            </p>
+
+            <p>
+              I also study vision-based workspace evaluation,
+              SMA actuator characterization, thermal response,
+              repeatability, and energy consumption.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Research interests -->
     <section class="section section-alt">
       <div class="container">
 
         <p class="section-label">
-          RESEARCH AREAS
+          RESEARCH INTERESTS
         </p>
 
-        <h2>
-          What I’m working on
+        <h2 class="section-title">
+          What I’m interested in
         </h2>
 
-        <div class="card-grid">
+        <div class="interest-grid">
 
-          <article class="card">
+          <article class="interest-card">
 
             <p class="card-number">
               01
@@ -155,14 +213,15 @@
             </h3>
 
             <p>
-              Modular robotic systems capable of forming diverse
-              configurations through independent segment control.
+              Modular and multi-segment robotic systems capable of
+              producing diverse configurations through independent
+              segment control.
             </p>
 
           </article>
 
 
-          <article class="card">
+          <article class="interest-card">
 
             <p class="card-number">
               02
@@ -173,17 +232,36 @@
             </h3>
 
             <p>
-              Robotic mechanisms designed to improve accessibility
-              and visualization in confined and complex environments.
+              Robotic mechanisms designed to improve accessibility,
+              maneuverability, and visualization in confined
+              environments.
             </p>
 
           </article>
 
 
-          <article class="card">
+          <article class="interest-card">
 
             <p class="card-number">
               03
+            </p>
+
+            <h3>
+              Shape-Morphing Mechanisms
+            </h3>
+
+            <p>
+              Mechanical systems that transform their geometry to
+              provide multiple functions within a single structure.
+            </p>
+
+          </article>
+
+
+          <article class="interest-card">
+
+            <p class="card-number">
+              04
             </p>
 
             <h3>
@@ -191,23 +269,11 @@
             </h3>
 
             <p>
-              Experimental characterization of SMA actuators,
-              including response time, temperature, repeatability,
-              and energy consumption.
+              Experimental evaluation and application of SMA-based
+              actuators, including thermal and energy characteristics.
             </p>
 
           </article>
-
-        </div>
-
-        <div class="section-button-area">
-
-          <a
-            class="button dark"
-            href="research.html"
-          >
-            Explore Research
-          </a>
 
         </div>
 
@@ -215,106 +281,84 @@
     </section>
 
 
-    <!-- Latest News -->
+    <!-- Education -->
     <section class="section">
       <div class="container">
 
-        <div class="section-heading-row">
+        <p class="section-label">
+          EDUCATION
+        </p>
 
-          <div>
-            <p class="section-label">
-              LATEST NEWS
-            </p>
+        <h2 class="section-title">
+          Academic background
+        </h2>
 
-            <h2>
-              Recent Updates
-            </h2>
-          </div>
+        <div class="timeline">
 
-          <a
-            class="text-link"
-            href="news.html"
-          >
-            View All News →
-          </a>
+          <article class="timeline-item">
+
+            <div class="timeline-date">
+              PRESENT
+            </div>
+
+            <div>
+              <h3>
+                Graduate Student in Mechanical Engineering
+              </h3>
+
+              <p class="timeline-place">
+                Korea University
+              </p>
+
+              <p>
+                Research in continuum robots, medical robotics,
+                shape-morphing mechanisms, and smart actuators.
+              </p>
+            </div>
+
+          </article>
 
         </div>
 
-
-        <div class="news-list">
-
-          <article class="news-item">
-
-            <time datetime="2026-07">
-              JUL 2026
-            </time>
-
-            <div>
-              <p class="news-category">
-                WEBSITE
-              </p>
-
-              <h3>
-                Personal research website launched
-              </h3>
-
-              <p>
-                I launched this website to share my research,
-                projects, experiments, and recent activities.
-              </p>
-            </div>
-
-          </article>
+      </div>
+    </section>
 
 
-          <article class="news-item">
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="contact-section"
+    >
+      <div class="container contact-inner">
 
-            <time datetime="2026-07">
-              JUL 2026
-            </time>
+        <p class="section-label section-label-light">
+          CONTACT
+        </p>
 
-            <div>
-              <p class="news-category">
-                RESEARCH
-              </p>
+        <h2>
+          Let’s talk about
+          robots and research.
+        </h2>
 
-              <h3>
-                Vision-based workspace evaluation
-              </h3>
+        <p class="contact-description">
+          Feel free to reach out for research collaboration,
+          project discussions, or other opportunities.
+        </p>
 
-              <p>
-                I developed a camera-based experimental setup
-                for measuring and visualizing the workspace of
-                a modular continuum robot.
-              </p>
-            </div>
+        <div class="contact-links">
 
-          </article>
+          <!-- 실제 이메일로 변경 -->
+          <a href="mailto:your-email@example.com">
+            your-email@example.com
+          </a>
 
-
-          <article class="news-item">
-
-            <time datetime="2026">
-              2026
-            </time>
-
-            <div>
-              <p class="news-category">
-                PROJECT
-              </p>
-
-              <h3>
-                Shape-lockable continuum robot
-              </h3>
-
-              <p>
-                I’m developing a modular continuum robot capable
-                of independent segment locking and zero-power
-                posture maintenance.
-              </p>
-            </div>
-
-          </article>
+          <a
+            href="https://github.com/jaehyun-54"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
 
         </div>
 
@@ -332,9 +376,9 @@
         © 2026 Jaehyun Yoon
       </p>
 
-      <p>
-        Mechanical Engineering · Robotics
-      </p>
+      <a href="#top">
+        Back to top ↑
+      </a>
 
     </div>
   </footer>
