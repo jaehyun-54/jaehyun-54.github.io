@@ -1,119 +1,190 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>News | 윤재현</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Jaehyun Yoon | News</title>
 
   <meta
     name="description"
-    content="윤재현의 연구 활동 및 최신 소식"
+    content="Research news and updates from Jaehyun Yoon."
   >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
+  <!-- Navigation -->
   <header class="site-header">
     <div class="container header-inner">
 
-      <a class="logo" href="index.html">JHY</a>
+      <a class="logo" href="index.html">
+        YJH
+      </a>
 
       <nav class="main-nav">
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-        <a class="active" href="news.html" aria-current="page">News</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">
+          About Me
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a
+          class="active"
+          href="news.html"
+          aria-current="page"
+        >
+          News
+        </a>
       </nav>
 
     </div>
   </header>
 
+
   <main>
 
-    <section class="subpage-hero">
+    <!-- Page header -->
+    <section class="page-hero">
       <div class="container">
 
-        <p class="section-label light-label">NEWS</p>
+        <p class="eyebrow">
+          NEWS & UPDATES
+        </p>
 
-        <h1>News & Updates</h1>
+        <h1>
+          Recent News
+        </h1>
 
-        <p class="subpage-description">
-          Research activities, projects, awards and announcements
+        <p class="page-description">
+          Research activities, project updates,
+          presentations, awards, and announcements.
         </p>
 
       </div>
     </section>
 
+
+    <!-- News list -->
     <section class="section">
       <div class="container">
-
-        <p class="section-label">LATEST UPDATES</p>
-        <h2>Recent News</h2>
 
         <div class="news-list">
 
           <article class="news-item">
 
             <time datetime="2026-07-24">
-              2026.07.24
+              JUL 24, 2026
             </time>
 
-            <div>
-              <p class="news-category">WEBSITE</p>
+            <div class="news-content">
 
-              <h3>Personal research website launched</h3>
+              <p class="news-category">
+                WEBSITE
+              </p>
+
+              <h2>
+                Personal portfolio website launched
+              </h2>
 
               <p>
-                연구 내용과 프로젝트를 소개하고
-                향후 연구 활동을 기록하기 위한
-                개인 연구 홈페이지를 개설했습니다.
+                I launched this website to share my research,
+                projects, experiments, and recent activities.
               </p>
+
             </div>
 
           </article>
+
 
           <article class="news-item">
 
             <time datetime="2026-07">
-              2026.07
+              JUL 2026
             </time>
 
-            <div>
-              <p class="news-category">RESEARCH</p>
+            <div class="news-content">
 
-              <h3>Continuum robot workspace evaluation</h3>
+              <p class="news-category">
+                EXPERIMENT
+              </p>
+
+              <h2>
+                Vision-based workspace evaluation
+              </h2>
 
               <p>
-                카메라와 컴퓨터 비전을 이용해
-                모듈형 continuum robot의 end-tip 궤적과
-                reachable workspace를 측정하는 실험을 진행했습니다.
+                I developed a camera-based experimental setup
+                for measuring end-tip trajectories and visualizing
+                the workspace of a modular continuum robot.
               </p>
+
             </div>
 
           </article>
+
 
           <article class="news-item">
 
             <time datetime="2026-07">
-              2026.07
+              JUL 2026
             </time>
 
-            <div>
-              <p class="news-category">PROJECT</p>
+            <div class="news-content">
 
-              <h3>SMA actuator energy measurement</h3>
+              <p class="news-category">
+                HARDWARE
+              </p>
+
+              <h2>
+                SMA actuator control system updated
+              </h2>
 
               <p>
-                SMA wire 구동 과정에서의 전압과 전류를 측정하고
-                누적 에너지 소비량을 분석하는 실험 시스템을 구축했습니다.
+                The SMA actuator control system was updated with
+                dedicated MOSFET channels and independent control
+                for multiple robot modules.
               </p>
+
             </div>
 
           </article>
+
+
+          <article class="news-item">
+
+            <time datetime="2026-07">
+              JUL 2026
+            </time>
+
+            <div class="news-content">
+
+              <p class="news-category">
+                ENERGY ANALYSIS
+              </p>
+
+              <h2>
+                SMA energy measurement system developed
+              </h2>
+
+              <p>
+                A measurement system was developed to record
+                voltage, current, power, and cumulative energy
+                consumption during SMA actuation.
+              </p>
+
+            </div>
+
+          </article>
+
 
           <article class="news-item">
 
@@ -121,41 +192,87 @@
               2026
             </time>
 
-            <div>
-              <p class="news-category">RESEARCH</p>
+            <div class="news-content">
 
-              <h3>Shape-lockable continuum robot development</h3>
+              <p class="news-category">
+                RESEARCH
+              </p>
+
+              <h2>
+                Shape-lockable continuum robot development
+              </h2>
 
               <p>
-                각 모듈을 독립적으로 잠금 및 해제하고,
-                전력 없이 자세를 유지할 수 있는
-                모듈형 continuum robot을 개발하고 있습니다.
+                I am developing a modular continuum robot capable
+                of independent segment control and zero-power
+                posture maintenance.
               </p>
+
             </div>
 
           </article>
 
         </div>
 
-        <div class="news-guide">
-          <h3>News 수정 방법</h3>
+
+        <!-- Editing guide -->
+        <div class="editing-guide">
+
+          <h3>
+            Adding a new update
+          </h3>
 
           <p>
-            새로운 소식을 추가할 때는 기존
+            Copy one complete
             <code>&lt;article class="news-item"&gt;</code>
-            블록을 복사한 뒤 날짜, 분류, 제목과 설명만 변경하면 됩니다.
+            block and replace the date, category, title,
+            and description.
           </p>
+
         </div>
+
+      </div>
+    </section>
+
+
+    <!-- Bottom link -->
+    <section class="page-bottom">
+      <div class="container page-bottom-inner">
+
+        <div>
+          <p class="section-label section-label-light">
+            SELECTED WORK
+          </p>
+
+          <h2>
+            Explore my robotics projects.
+          </h2>
+        </div>
+
+        <a
+          class="button primary"
+          href="projects.html"
+        >
+          View Projects
+        </a>
 
       </div>
     </section>
 
   </main>
 
+
   <footer>
     <div class="container footer-inner">
-      <p>© 2026 Jae Hyun Yoon</p>
-      <p>Mechanical Engineering · Robotics</p>
+
+      <p>
+        © 2026 Jaehyun Yoon
+      </p>
+
+      <a href="#top">
+        Back to top ↑
+      </a>
+
     </div>
   </footer>
 
