@@ -1,4 +1,10 @@
-:root {
+/* =========================================
+   Light theme
+========================================= */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
   --background: #f7f8fa;
   --surface: #ffffff;
   --surface-alt: #edf1f6;
@@ -7,14 +13,192 @@
   --muted: #626a76;
 
   --primary: #1a55ad;
-  --primary-light: #8fb8ff;
+  --primary-light: #2d6fc7;
   --primary-dark: #103873;
-
-  --navy: #101d35;
-  --navy-light: #173e76;
 
   --line: #dfe4eb;
 
+  --header-background: rgba(255, 255, 255, 0.94);
+  --header-border: rgba(223, 228, 235, 0.92);
+
+  --hero-background:
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(54, 111, 198, 0.19),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #f3f7fd 0%,
+      #e4edf9 55%,
+      #cedff5 100%
+    );
+
+  --hero-text: #13213a;
+  --hero-description: #3e506a;
+  --hero-eyebrow: #1a55ad;
+
+  --focus-background: rgba(255, 255, 255, 0.65);
+  --focus-border: rgba(31, 74, 132, 0.18);
+  --focus-shadow: 0 30px 70px rgba(38, 72, 120, 0.13);
+  --focus-divider: rgba(31, 74, 132, 0.16);
+  --focus-number: #1a55ad;
+
+  --orbit-color: rgba(39, 94, 172, 0.2);
+  --dot-color: #2d6fc7;
+
+  --primary-button-background: #173f78;
+  --primary-button-text: #ffffff;
+
+  --secondary-button-background: rgba(255, 255, 255, 0.35);
+  --secondary-button-text: #17304f;
+  --secondary-button-border: rgba(23, 63, 120, 0.3);
+
+  --card-background: #ffffff;
+  --card-shadow: 0 12px 35px rgba(20, 32, 50, 0.06);
+  --card-shadow-hover: 0 20px 45px rgba(20, 32, 50, 0.12);
+
+  --tag-background: #f4f6f9;
+  --tag-border: #ccd4df;
+  --tag-text: #4f5865;
+
+  --contact-background:
+    radial-gradient(
+      circle at 84% 20%,
+      rgba(58, 118, 208, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #edf4fd,
+      #d3e3f7
+    );
+
+  --contact-text: #12213a;
+  --contact-muted: #40536e;
+
+  --contact-primary-background: #173f78;
+  --contact-primary-text: #ffffff;
+
+  --contact-secondary-border: rgba(23, 63, 120, 0.3);
+  --contact-secondary-text: #17304f;
+
+  --footer-background: #dce7f5;
+  --footer-text: #52637a;
+
+  --switch-background: #edf1f6;
+  --switch-border: #d9e0e9;
+  --switch-text: #667183;
+
+  --switch-active-background: #ffffff;
+  --switch-active-text: #173f78;
+  --switch-active-shadow: 0 3px 10px rgba(21, 44, 76, 0.12);
+}
+
+
+/* =========================================
+   Dark theme
+========================================= */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --background: #0b1424;
+  --surface: #101b2e;
+  --surface-alt: #13223a;
+
+  --text: #f4f7fb;
+  --muted: #afbdd0;
+
+  --primary: #8fb8ff;
+  --primary-light: #8fb8ff;
+  --primary-dark: #6799e9;
+
+  --line: rgba(182, 204, 235, 0.16);
+
+  --header-background: rgba(9, 17, 31, 0.94);
+  --header-border: rgba(176, 200, 232, 0.14);
+
+  --hero-background:
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(82, 137, 244, 0.42),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #101d35 0%,
+      #172b4d 55%,
+      #123f7a 100%
+    );
+
+  --hero-text: #ffffff;
+  --hero-description: #d5dfed;
+  --hero-eyebrow: #79aaff;
+
+  --focus-background: rgba(255, 255, 255, 0.08);
+  --focus-border: rgba(255, 255, 255, 0.2);
+  --focus-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+  --focus-divider: rgba(255, 255, 255, 0.15);
+  --focus-number: #83aff7;
+
+  --orbit-color: rgba(143, 184, 255, 0.28);
+  --dot-color: #8fb8ff;
+
+  --primary-button-background: #ffffff;
+  --primary-button-text: #10213d;
+
+  --secondary-button-background: rgba(255, 255, 255, 0.06);
+  --secondary-button-text: #ffffff;
+  --secondary-button-border: rgba(255, 255, 255, 0.35);
+
+  --card-background: #15243c;
+  --card-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+  --card-shadow-hover: 0 20px 45px rgba(0, 0, 0, 0.3);
+
+  --tag-background: #1b2d49;
+  --tag-border: rgba(174, 201, 238, 0.2);
+  --tag-text: #c1d0e4;
+
+  --contact-background:
+    radial-gradient(
+      circle at 84% 20%,
+      rgba(80, 140, 255, 0.4),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #101d35,
+      #143f78
+    );
+
+  --contact-text: #ffffff;
+  --contact-muted: #d4deed;
+
+  --contact-primary-background: #ffffff;
+  --contact-primary-text: #10213d;
+
+  --contact-secondary-border: rgba(255, 255, 255, 0.38);
+  --contact-secondary-text: #ffffff;
+
+  --footer-background: #08111f;
+  --footer-text: #aeb9c9;
+
+  --switch-background: #101b2e;
+  --switch-border: rgba(176, 200, 232, 0.18);
+  --switch-text: #aebbd0;
+
+  --switch-active-background: #233b5e;
+  --switch-active-text: #ffffff;
+  --switch-active-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   Shared variables
+========================================= */
+
+:root {
   --max-width: 1120px;
 }
 
@@ -43,10 +227,18 @@ body {
     sans-serif;
 
   line-height: 1.7;
+
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 a {
   color: inherit;
+}
+
+button {
+  font: inherit;
 }
 
 img {
@@ -75,11 +267,15 @@ section {
   top: 0;
   z-index: 1000;
 
-  border-bottom: 1px solid rgba(223, 228, 235, 0.92);
+  border-bottom: 1px solid var(--header-border);
 
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--header-background);
 
   backdrop-filter: blur(12px);
+
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .header-inner {
@@ -88,6 +284,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  gap: 24px;
 }
 
 .logo {
@@ -98,6 +296,79 @@ section {
   letter-spacing: -0.6px;
 
   text-decoration: none;
+}
+
+
+/* =========================================
+   Theme switch
+========================================= */
+
+.theme-switch {
+  display: inline-flex;
+
+  padding: 4px;
+
+  border: 1px solid var(--switch-border);
+  border-radius: 999px;
+
+  background: var(--switch-background);
+
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.theme-option {
+  min-height: 34px;
+
+  display: inline-flex;
+
+  padding: 0 13px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  border: 0;
+  border-radius: 999px;
+
+  color: var(--switch-text);
+  background: transparent;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-option:hover {
+  transform: translateY(-1px);
+}
+
+.theme-option:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.theme-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+:root[data-theme="light"]
+.theme-option[data-theme-value="light"],
+:root[data-theme="dark"]
+.theme-option[data-theme-value="dark"] {
+  color: var(--switch-active-text);
+  background: var(--switch-active-background);
+  box-shadow: var(--switch-active-shadow);
 }
 
 
@@ -120,7 +391,7 @@ section {
 }
 
 .section-label-light {
-  color: var(--primary-light);
+  color: var(--primary);
 }
 
 
@@ -134,20 +405,12 @@ section {
   display: flex;
   align-items: center;
 
-  color: white;
+  color: var(--hero-text);
+  background: var(--hero-background);
 
-  background:
-    radial-gradient(
-      circle at 85% 18%,
-      rgba(82, 137, 244, 0.42),
-      transparent 34%
-    ),
-    linear-gradient(
-      135deg,
-      #101d35 0%,
-      #172b4d 55%,
-      #123f7a 100%
-    );
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
 }
 
 .hero-grid {
@@ -162,11 +425,13 @@ section {
 }
 
 .hero .eyebrow {
-  color: #79aaff;
+  color: var(--hero-eyebrow);
 }
 
 .hero h1 {
   margin: 0;
+
+  color: var(--hero-text);
 
   font-size: clamp(58px, 7vw, 92px);
   line-height: 1.07;
@@ -182,15 +447,13 @@ section {
 
   margin: 30px 0 0;
 
-  color: #eef3fa;
+  color: var(--hero-description);
 
   font-size: 18px;
 }
 
 .hero-description-secondary {
   margin-top: 8px;
-
-  color: #d5dfed;
 }
 
 .hero-buttons {
@@ -224,14 +487,21 @@ section {
 
   padding: 36px;
 
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--focus-border);
   border-radius: 18px;
 
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--hero-text);
+  background: var(--focus-background);
 
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--focus-shadow);
 
   backdrop-filter: blur(13px);
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .focus-label {
@@ -249,7 +519,7 @@ section {
 
   padding: 16px 0;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid var(--focus-divider);
 }
 
 .focus-item:last-child {
@@ -257,7 +527,7 @@ section {
 }
 
 .focus-item span {
-  color: #83aff7;
+  color: var(--focus-number);
 
   font-size: 12px;
   font-weight: 800;
@@ -270,8 +540,10 @@ section {
 .visual-orbit {
   position: absolute;
 
-  border: 1px solid rgba(143, 184, 255, 0.28);
+  border: 1px solid var(--orbit-color);
   border-radius: 50%;
+
+  transition: border-color 0.25s ease;
 }
 
 .orbit-one {
@@ -292,9 +564,13 @@ section {
 
   border-radius: 50%;
 
-  background: var(--primary-light);
+  background: var(--dot-color);
 
-  box-shadow: 0 0 25px rgba(143, 184, 255, 0.8);
+  box-shadow: 0 0 25px var(--dot-color);
+
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .dot-one {
@@ -331,7 +607,9 @@ section {
 
   transition:
     transform 0.2s ease,
-    background 0.2s ease;
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .button:hover {
@@ -339,15 +617,15 @@ section {
 }
 
 .button.primary {
-  color: #10213d;
-  background: white;
+  color: var(--primary-button-text);
+  background: var(--primary-button-background);
 }
 
 .button.secondary {
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--secondary-button-border);
 
-  color: white;
-  background: rgba(255, 255, 255, 0.06);
+  color: var(--secondary-button-text);
+  background: var(--secondary-button-background);
 }
 
 
@@ -357,6 +635,12 @@ section {
 
 .section {
   padding: 110px 0;
+
+  color: var(--text);
+
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .section-heading {
@@ -446,19 +730,22 @@ section {
   border: 1px solid var(--line);
   border-radius: 14px;
 
-  background: white;
+  background: var(--card-background);
 
-  box-shadow: 0 12px 35px rgba(20, 32, 50, 0.06);
+  box-shadow: var(--card-shadow);
 
   transition:
     transform 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
     box-shadow 0.25s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
 
-  box-shadow: 0 20px 45px rgba(20, 32, 50, 0.12);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .project-image {
@@ -595,14 +882,19 @@ section {
 .project-tags li {
   padding: 6px 12px;
 
-  border: 1px solid #ccd4df;
+  border: 1px solid var(--tag-border);
   border-radius: 999px;
 
-  color: #4f5865;
-  background: #f4f6f9;
+  color: var(--tag-text);
+  background: var(--tag-background);
 
   font-size: 12px;
   font-weight: 700;
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 
@@ -611,7 +903,7 @@ section {
 ========================================= */
 
 .news-section {
-  background: white;
+  background: var(--surface);
 }
 
 .news-list {
@@ -661,19 +953,16 @@ section {
 .contact-section {
   padding: 125px 0;
 
-  color: white;
+  color: var(--contact-text);
+  background: var(--contact-background);
 
-  background:
-    radial-gradient(
-      circle at 84% 20%,
-      rgba(80, 140, 255, 0.4),
-      transparent 35%
-    ),
-    linear-gradient(
-      135deg,
-      #101d35,
-      #143f78
-    );
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.contact-section .section-label {
+  color: var(--primary);
 }
 
 .contact-inner h2 {
@@ -691,7 +980,7 @@ section {
 
   margin: 28px 0 0;
 
-  color: #d4deed;
+  color: var(--contact-muted);
 
   font-size: 18px;
 }
@@ -714,10 +1003,11 @@ section {
   align-items: center;
   justify-content: center;
 
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  border: 1px solid var(--contact-secondary-border);
   border-radius: 7px;
 
-  color: white;
+  color: var(--contact-secondary-text);
+  background: transparent;
 
   font-weight: 700;
 
@@ -725,14 +1015,16 @@ section {
 
   transition:
     transform 0.2s ease,
-    background 0.2s ease;
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .contact-links a:first-child {
-  border-color: white;
+  border-color: var(--contact-primary-background);
 
-  color: #10213d;
-  background: white;
+  color: var(--contact-primary-text);
+  background: var(--contact-primary-background);
 }
 
 .contact-links a:hover {
@@ -747,8 +1039,12 @@ section {
 footer {
   padding: 28px 0;
 
-  color: #aeb9c9;
-  background: #0b1628;
+  color: var(--footer-text);
+  background: var(--footer-background);
+
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease;
 }
 
 .footer-inner {
@@ -765,7 +1061,7 @@ footer {
 }
 
 .footer-inner a {
-  color: #aeb9c9;
+  color: var(--footer-text);
 
   font-size: 13px;
 
@@ -773,7 +1069,7 @@ footer {
 }
 
 .footer-inner a:hover {
-  color: white;
+  color: var(--primary);
 }
 
 
@@ -821,6 +1117,18 @@ footer {
 
   .header-inner {
     min-height: 65px;
+  }
+
+  .theme-option {
+    min-height: 31px;
+
+    padding: 0 10px;
+
+    font-size: 11px;
+  }
+
+  .theme-icon {
+    font-size: 13px;
   }
 
   .hero {
