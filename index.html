@@ -15,10 +15,7 @@
     content="Personal portfolio of Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
-  <!--
-    저장되어 있는 테마를 페이지가 보이기 전에 먼저 적용합니다.
-    저장된 값이 없으면 Dark mode로 시작합니다.
-  -->
+  <!-- 저장된 테마를 화면 표시 전에 적용 -->
   <script>
     (function () {
       const savedTheme = localStorage.getItem("theme");
@@ -45,42 +42,35 @@
         YJH
       </a>
 
-      <!-- Light / Dark mode buttons -->
-      <div
-        class="theme-switch"
-        role="group"
-        aria-label="Select color theme"
-      >
+      <div class="header-actions">
 
-        <button
-          class="theme-option"
-          type="button"
-          data-theme-value="light"
-          aria-pressed="false"
+        <div
+          class="theme-switch"
+          role="group"
+          aria-label="Select color theme"
         >
-          <span class="theme-icon" aria-hidden="true">
-            ☀
-          </span>
 
-          <span>
-            Light
-          </span>
-        </button>
+          <button
+            class="theme-option"
+            type="button"
+            data-theme-value="light"
+            aria-pressed="false"
+          >
+            <span class="theme-icon" aria-hidden="true">☀</span>
+            <span>Light</span>
+          </button>
 
-        <button
-          class="theme-option"
-          type="button"
-          data-theme-value="dark"
-          aria-pressed="true"
-        >
-          <span class="theme-icon" aria-hidden="true">
-            ☾
-          </span>
+          <button
+            class="theme-option"
+            type="button"
+            data-theme-value="dark"
+            aria-pressed="true"
+          >
+            <span class="theme-icon" aria-hidden="true">☾</span>
+            <span>Dark</span>
+          </button>
 
-          <span>
-            Dark
-          </span>
-        </button>
+        </div>
 
       </div>
 
@@ -90,7 +80,7 @@
 
   <main>
 
-    <!-- Hero / About Me -->
+    <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
 
@@ -180,15 +170,15 @@
     </section>
 
 
-    <!-- Short Introduction -->
-    <section class="section introduction-section">
+    <!-- About Me Preview -->
+    <section class="section about-preview-section">
       <div class="container">
 
         <p class="section-label">
           ABOUT ME
         </p>
 
-        <div class="introduction-grid">
+        <div class="about-preview-grid">
 
           <div>
 
@@ -199,7 +189,7 @@
 
           </div>
 
-          <div class="introduction-text">
+          <div class="about-preview-content">
 
             <p>
               My research focuses on robotic mechanisms that can
@@ -209,16 +199,25 @@
 
             <p>
               I am currently developing a modular continuum robot
-              with independently lockable segments. The system is
-              designed to create diverse configurations and maintain
-              its posture without continuous power consumption.
+              with independently lockable segments and zero-power
+              posture maintenance.
             </p>
 
-            <p>
-              I also study vision-based workspace evaluation,
-              SMA actuator characterization, thermal response,
-              repeatability, and energy consumption.
-            </p>
+            <a
+              class="profile-link"
+              href="about.html"
+            >
+              <span>
+                View Full Profile
+              </span>
+
+              <span
+                class="profile-link-arrow"
+                aria-hidden="true"
+              >
+                →
+              </span>
+            </a>
 
           </div>
 
@@ -261,8 +260,8 @@
             <div class="project-image project-image-blue">
 
               <!--
-              실제 이미지를 넣을 때 project-placeholder를 지우고
-              아래처럼 입력합니다.
+              실제 이미지를 넣을 때 아래 project-placeholder를 지우고
+              다음과 같이 입력하면 됩니다.
 
               <img
                 src="images/continuum-robot.jpg"
@@ -608,7 +607,7 @@
     >
       <div class="container contact-inner">
 
-        <p class="section-label section-label-light">
+        <p class="section-label">
           CONTACT
         </p>
 
@@ -661,7 +660,7 @@
   </footer>
 
 
-  <!-- Theme switching script -->
+  <!-- Theme Script -->
   <script>
     const rootElement = document.documentElement;
 
