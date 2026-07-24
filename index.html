@@ -1,9 +1,608 @@
-<header class="site-header">
-  <div class="container header-inner">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-    <a class="logo" href="#top">
-      YJH
-    </a>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  </div>
-</header>
+  <title>Jaehyun Yoon | Robotics Researcher</title>
+
+  <meta
+    name="description"
+    content="Personal portfolio of Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="logo" href="#top">
+        YJH
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Hero / About Me -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <p class="eyebrow">
+            MECHANICAL ENGINEERING · ROBOTICS
+          </p>
+
+          <h1>
+            Hey, I’m
+            <span>Jaehyun.</span>
+          </h1>
+
+          <p class="hero-description">
+            I’m a graduate student in Mechanical Engineering
+            at Korea University.
+          </p>
+
+          <p class="hero-description hero-description-secondary">
+            My research interests include continuum robots,
+            medical robotics, shape-morphing mechanisms,
+            and smart actuators.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              class="button primary"
+              href="#projects"
+            >
+              View Projects
+            </a>
+
+            <a
+              class="button secondary"
+              href="#contact"
+            >
+              Contact Me
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Current Focus -->
+        <div class="hero-visual">
+
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="visual-dot dot-one"></div>
+          <div class="visual-dot dot-two"></div>
+
+          <div class="focus-panel">
+
+            <p class="focus-label">
+              CURRENT FOCUS
+            </p>
+
+            <div class="focus-item">
+              <span>01</span>
+              <strong>Continuum Robots</strong>
+            </div>
+
+            <div class="focus-item">
+              <span>02</span>
+              <strong>Medical Robotics</strong>
+            </div>
+
+            <div class="focus-item">
+              <span>03</span>
+              <strong>Shape-Morphing</strong>
+            </div>
+
+            <div class="focus-item">
+              <span>04</span>
+              <strong>Smart Actuators</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Short Introduction -->
+    <section class="section introduction-section">
+      <div class="container">
+
+        <p class="section-label">
+          ABOUT ME
+        </p>
+
+        <div class="introduction-grid">
+
+          <div>
+
+            <h2>
+              Exploring robots that can adapt,
+              transform, and hold their shape.
+            </h2>
+
+          </div>
+
+          <div class="introduction-text">
+
+            <p>
+              My research focuses on robotic mechanisms that can
+              adapt their shape and configuration to complex
+              environments.
+            </p>
+
+            <p>
+              I am currently developing a modular continuum robot
+              with independently lockable segments. The system is
+              designed to create diverse configurations and maintain
+              its posture without continuous power consumption.
+            </p>
+
+            <p>
+              I also study vision-based workspace evaluation,
+              SMA actuator characterization, thermal response,
+              repeatability, and energy consumption.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section
+      id="projects"
+      class="section projects-section"
+    >
+      <div class="container">
+
+        <p class="section-label">
+          SELECTED PROJECTS
+        </p>
+
+        <div class="section-heading">
+
+          <h2>
+            My Projects
+          </h2>
+
+          <p>
+            Selected work in robotic mechanisms, continuum robots,
+            smart actuators, and experimental evaluation.
+          </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+
+            <div class="project-image project-image-blue">
+
+              <!--
+              실제 이미지를 넣을 때 아래 project-placeholder를 지우고
+              다음처럼 입력하면 됩니다.
+
+              <img
+                src="images/continuum-robot.jpg"
+                alt="Shape-lockable continuum robot"
+              >
+              -->
+
+              <div class="project-placeholder">
+
+                <span>
+                  PROJECT 01
+                </span>
+
+                <strong>
+                  Continuum Robot
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <div class="project-card-content">
+
+              <p class="project-category">
+                CONTINUUM ROBOTICS
+              </p>
+
+              <h3>
+                Shape-Lockable Continuum Robot
+              </h3>
+
+              <p>
+                A modular continuum robot with independently
+                lockable segments and zero-power posture
+                maintenance.
+              </p>
+
+              <ul class="project-tags">
+                <li>Continuum Robot</li>
+                <li>SMA Actuator</li>
+                <li>Mechanical Locking</li>
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 2 -->
+          <article class="project-card">
+
+            <div class="project-image project-image-light">
+
+              <div class="project-placeholder project-placeholder-dark">
+
+                <span>
+                  PROJECT 02
+                </span>
+
+                <strong>
+                  Workspace Evaluation
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <div class="project-card-content">
+
+              <p class="project-category">
+                COMPUTER VISION
+              </p>
+
+              <h3>
+                Robot Workspace Evaluation
+              </h3>
+
+              <p>
+                A camera-based experimental system for measuring
+                robot motion and visualizing the reachable
+                workspace.
+              </p>
+
+              <ul class="project-tags">
+                <li>OpenCV</li>
+                <li>Workspace</li>
+                <li>Motion Tracking</li>
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 3 -->
+          <article class="project-card">
+
+            <div class="project-image project-image-dark">
+
+              <div class="project-placeholder">
+
+                <span>
+                  PROJECT 03
+                </span>
+
+                <strong>
+                  SMA Actuator
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <div class="project-card-content">
+
+              <p class="project-category">
+                SMART ACTUATORS
+              </p>
+
+              <h3>
+                SMA Actuator Characterization
+              </h3>
+
+              <p>
+                Experimental evaluation of SMA wire displacement,
+                response time, temperature, repeatability,
+                and recovery behavior.
+              </p>
+
+              <ul class="project-tags">
+                <li>SMA Wire</li>
+                <li>Thermal Response</li>
+                <li>Repeatability</li>
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <!-- Project 4 -->
+          <article class="project-card">
+
+            <div class="project-image project-image-gradient">
+
+              <div class="project-placeholder">
+
+                <span>
+                  PROJECT 04
+                </span>
+
+                <strong>
+                  Energy Measurement
+                </strong>
+
+              </div>
+
+            </div>
+
+
+            <div class="project-card-content">
+
+              <p class="project-category">
+                ENERGY ANALYSIS
+              </p>
+
+              <h3>
+                Robot Energy Consumption
+              </h3>
+
+              <p>
+                Measurement and analysis of voltage, current,
+                power, and cumulative energy consumption during
+                robot actuation.
+              </p>
+
+              <ul class="project-tags">
+                <li>INA226</li>
+                <li>Arduino</li>
+                <li>Energy Analysis</li>
+              </ul>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- News -->
+    <section
+      id="news"
+      class="section news-section"
+    >
+      <div class="container">
+
+        <p class="section-label">
+          NEWS
+        </p>
+
+        <div class="section-heading">
+
+          <h2>
+            Recent Updates
+          </h2>
+
+          <p>
+            Research activities, project updates,
+            presentations, and announcements.
+          </p>
+
+        </div>
+
+
+        <div class="news-list">
+
+          <!-- News 1 -->
+          <article class="news-item">
+
+            <time datetime="2026-07-24">
+              JUL 24, 2026
+            </time>
+
+            <div class="news-content">
+
+              <p class="news-category">
+                WEBSITE
+              </p>
+
+              <h3>
+                Personal portfolio website launched
+              </h3>
+
+              <p>
+                I launched this website to share my research,
+                projects, experiments, and recent activities.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- News 2 -->
+          <article class="news-item">
+
+            <time datetime="2026-07">
+              JUL 2026
+            </time>
+
+            <div class="news-content">
+
+              <p class="news-category">
+                EXPERIMENT
+              </p>
+
+              <h3>
+                Vision-based workspace evaluation
+              </h3>
+
+              <p>
+                I developed a camera-based experimental setup
+                for measuring end-tip trajectories and visualizing
+                the workspace of a modular continuum robot.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- News 3 -->
+          <article class="news-item">
+
+            <time datetime="2026-07">
+              JUL 2026
+            </time>
+
+            <div class="news-content">
+
+              <p class="news-category">
+                HARDWARE
+              </p>
+
+              <h3>
+                SMA actuator control system updated
+              </h3>
+
+              <p>
+                The SMA actuator control system was updated
+                with dedicated MOSFET channels for independent
+                control of multiple robot modules.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- News 4 -->
+          <article class="news-item">
+
+            <time datetime="2026">
+              2026
+            </time>
+
+            <div class="news-content">
+
+              <p class="news-category">
+                RESEARCH
+              </p>
+
+              <h3>
+                Shape-lockable continuum robot development
+              </h3>
+
+              <p>
+                I am developing a modular continuum robot
+                capable of independent segment control and
+                zero-power posture maintenance.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="contact-section"
+    >
+      <div class="container contact-inner">
+
+        <p class="section-label section-label-light">
+          CONTACT
+        </p>
+
+        <h2>
+          Let’s talk about
+          robots and research.
+        </h2>
+
+        <p class="contact-description">
+          Feel free to reach out for research collaboration,
+          project discussions, or other opportunities.
+        </p>
+
+        <div class="contact-links">
+
+          <!-- 실제 이메일로 변경 -->
+          <a href="mailto:your-email@example.com">
+            your-email@example.com
+          </a>
+
+          <a
+            href="https://github.com/jaehyun-54"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 Jaehyun Yoon
+      </p>
+
+      <a href="#top">
+        Back to top ↑
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+</html>
