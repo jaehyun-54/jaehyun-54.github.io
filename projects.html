@@ -1,154 +1,296 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Projects | 윤재현</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Jaehyun Yoon | Projects</title>
 
   <meta
     name="description"
-    content="윤재현의 로봇 연구 프로젝트"
+    content="Selected robotics projects by Jaehyun Yoon."
   >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
+  <!-- Navigation -->
   <header class="site-header">
     <div class="container header-inner">
 
-      <a class="logo" href="index.html">JHY</a>
+      <a class="logo" href="index.html">
+        YJH
+      </a>
 
       <nav class="main-nav">
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a class="active" href="projects.html" aria-current="page">Projects</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">
+          About Me
+        </a>
+
+        <a
+          class="active"
+          href="projects.html"
+          aria-current="page"
+        >
+          Projects
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
       </nav>
 
     </div>
   </header>
 
+
   <main>
 
-    <section class="subpage-hero">
+    <!-- Page header -->
+    <section class="page-hero">
       <div class="container">
 
-        <p class="section-label light-label">PROJECTS</p>
+        <p class="eyebrow">
+          SELECTED WORK
+        </p>
 
-        <h1>Selected Projects</h1>
+        <h1>
+          Projects
+        </h1>
 
-        <p class="subpage-description">
-          Robot design, experiments and vision-based evaluation
+        <p class="page-description">
+          Selected projects in robotic mechanisms,
+          continuum robots, smart actuators,
+          and vision-based experimental evaluation.
         </p>
 
       </div>
     </section>
 
+
+    <!-- Projects -->
     <section class="section">
       <div class="container">
 
-        <div class="project-list">
+        <div class="project-showcase">
 
-          <article class="project project-large">
+          <!-- Project 1 -->
+          <article class="project-feature">
 
-            <div>
-              <p class="project-category">ROBOT DESIGN</p>
+            <div class="project-media project-media-blue">
 
-              <h2>Shape-Lockable Continuum Robot</h2>
+              <!--
+              이미지를 넣을 때 아래 project-placeholder를 지우고
+              다음 코드를 사용:
+
+              <img
+                src="images/continuum-robot.jpg"
+                alt="Shape-lockable continuum robot"
+              >
+              -->
+
+              <div class="project-placeholder">
+                <span>PROJECT 01</span>
+
+                <strong>
+                  Add your continuum robot image
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <p class="project-category">
+                CONTINUUM ROBOTICS
+              </p>
+
+              <h2>
+                Shape-Lockable
+                Continuum Robot
+              </h2>
 
               <p>
-                SMA 기반 잠금 해제 메커니즘을 이용하여
-                모듈별 독립 제어와 무전력 자세 유지가 가능한
-                모듈형 continuum robot을 개발하고 있습니다.
+                A modular continuum robot with independently
+                lockable segments and zero-power posture
+                maintenance.
+              </p>
+
+              <p>
+                Each module uses an SMA-actuated release mechanism
+                and a mechanical locking structure, allowing selected
+                segments to move while the remaining segments maintain
+                their configuration.
               </p>
 
               <ul class="project-tags">
-                <li>Continuum robot</li>
-                <li>SMA actuator</li>
-                <li>Mechanical locking</li>
-                <li>Modular design</li>
+                <li>Continuum Robot</li>
+                <li>SMA Actuator</li>
+                <li>Mechanical Locking</li>
+                <li>Modular Design</li>
               </ul>
-            </div>
 
-            <span class="project-year">2026</span>
+            </div>
 
           </article>
 
-          <article class="project project-large">
 
-            <div>
-              <p class="project-category">COMPUTER VISION</p>
+          <!-- Project 2 -->
+          <article class="project-feature project-feature-reverse">
 
-              <h2>Robot Workspace Evaluation</h2>
+            <div class="project-media project-media-light">
+
+              <div class="project-placeholder project-placeholder-dark">
+                <span>PROJECT 02</span>
+
+                <strong>
+                  Add your workspace figure
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <p class="project-category">
+                COMPUTER VISION
+              </p>
+
+              <h2>
+                Robot Workspace
+                Evaluation
+              </h2>
 
               <p>
-                다중 카메라와 OpenCV를 활용하여
-                로봇 end-tip의 위치와 회전 궤적을 측정하고,
-                로봇의 reachable workspace를 시각화합니다.
+                A vision-based experimental system for tracking
+                robot motion and evaluating the reachable workspace
+                of a modular continuum robot.
+              </p>
+
+              <p>
+                Multiple cameras and OpenCV are used to measure
+                end-tip trajectories, rotational motion, and
+                three-dimensional workspace characteristics.
               </p>
 
               <ul class="project-tags">
                 <li>OpenCV</li>
-                <li>Camera calibration</li>
-                <li>Workspace evaluation</li>
-                <li>Trajectory tracking</li>
+                <li>Camera Calibration</li>
+                <li>Workspace</li>
+                <li>Motion Tracking</li>
               </ul>
-            </div>
 
-            <span class="project-year">2026</span>
+            </div>
 
           </article>
 
-          <article class="project project-large">
 
-            <div>
-              <p class="project-category">EXPERIMENT</p>
+          <!-- Project 3 -->
+          <article class="project-feature">
 
-              <h2>SMA Actuator Characterization</h2>
+            <div class="project-media project-media-dark">
+
+              <div class="project-placeholder">
+                <span>PROJECT 03</span>
+
+                <strong>
+                  Add your SMA experiment image
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <p class="project-category">
+                SMART ACTUATORS
+              </p>
+
+              <h2>
+                SMA Actuator
+                Characterization
+              </h2>
 
               <p>
-                SMA wire의 직경, 인가 전압 및 복원 스프링 조건에 따른
-                변위, 응답시간, 온도와 반복성을 측정합니다.
+                Experimental characterization of SMA wire actuation
+                under different wire diameters, voltage conditions,
+                and restoring spring coefficients.
+              </p>
+
+              <p>
+                The evaluation includes displacement, response time,
+                recovery time, temperature, repeatability, and
+                energy consumption.
               </p>
 
               <ul class="project-tags">
-                <li>SMA wire</li>
+                <li>SMA Wire</li>
                 <li>Displacement</li>
-                <li>Temperature</li>
+                <li>Thermal Response</li>
                 <li>Repeatability</li>
               </ul>
-            </div>
 
-            <span class="project-year">2026</span>
+            </div>
 
           </article>
 
-          <article class="project project-large">
 
-            <div>
-              <p class="project-category">ENERGY ANALYSIS</p>
+          <!-- Project 4 -->
+          <article class="project-feature project-feature-reverse">
 
-              <h2>Robot Energy Consumption Measurement</h2>
+            <div class="project-media project-media-gradient">
+
+              <div class="project-placeholder">
+                <span>PROJECT 04</span>
+
+                <strong>
+                  Add your energy graph
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="project-content">
+
+              <p class="project-category">
+                ENERGY ANALYSIS
+              </p>
+
+              <h2>
+                Robot Energy
+                Consumption
+              </h2>
 
               <p>
-                센서를 이용해 전압과 전류를 측정하고,
-                로봇의 잠금 해제, 형상 변화 및 재잠금 과정에서
-                소비되는 에너지를 분석합니다.
+                Measurement and analysis of voltage, current,
+                power, and cumulative energy consumption during
+                robot actuation.
+              </p>
+
+              <p>
+                The system compares energy consumption during
+                unlocking, shape transformation, relocking,
+                and posture maintenance.
               </p>
 
               <ul class="project-tags">
                 <li>INA226</li>
-                <li>Power measurement</li>
-                <li>Energy consumption</li>
                 <li>Arduino</li>
+                <li>Power Measurement</li>
+                <li>Energy Analysis</li>
               </ul>
-            </div>
 
-            <span class="project-year">2026</span>
+            </div>
 
           </article>
 
@@ -157,12 +299,45 @@
       </div>
     </section>
 
+
+    <!-- Bottom link -->
+    <section class="page-bottom">
+      <div class="container page-bottom-inner">
+
+        <div>
+          <p class="section-label section-label-light">
+            MORE ABOUT ME
+          </p>
+
+          <h2>
+            Learn more about my research interests.
+          </h2>
+        </div>
+
+        <a
+          class="button primary"
+          href="index.html"
+        >
+          About Me
+        </a>
+
+      </div>
+    </section>
+
   </main>
+
 
   <footer>
     <div class="container footer-inner">
-      <p>© 2026 Jae Hyun Yoon</p>
-      <p>Mechanical Engineering · Robotics</p>
+
+      <p>
+        © 2026 Jaehyun Yoon
+      </p>
+
+      <a href="#top">
+        Back to top ↑
+      </a>
+
     </div>
   </footer>
 
