@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
 
@@ -15,6 +15,23 @@
     content="Personal portfolio of Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
+  <!--
+    저장되어 있는 테마를 페이지가 보이기 전에 먼저 적용합니다.
+    저장된 값이 없으면 Dark mode로 시작합니다.
+  -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.setAttribute(
+          "data-theme",
+          savedTheme
+        );
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,6 +44,45 @@
       <a class="logo" href="#top">
         YJH
       </a>
+
+      <!-- Light / Dark mode buttons -->
+      <div
+        class="theme-switch"
+        role="group"
+        aria-label="Select color theme"
+      >
+
+        <button
+          class="theme-option"
+          type="button"
+          data-theme-value="light"
+          aria-pressed="false"
+        >
+          <span class="theme-icon" aria-hidden="true">
+            ☀
+          </span>
+
+          <span>
+            Light
+          </span>
+        </button>
+
+        <button
+          class="theme-option"
+          type="button"
+          data-theme-value="dark"
+          aria-pressed="true"
+        >
+          <span class="theme-icon" aria-hidden="true">
+            ☾
+          </span>
+
+          <span>
+            Dark
+          </span>
+        </button>
+
+      </div>
 
     </div>
   </header>
@@ -205,8 +261,8 @@
             <div class="project-image project-image-blue">
 
               <!--
-              실제 이미지를 넣을 때 아래 project-placeholder를 지우고
-              다음처럼 입력하면 됩니다.
+              실제 이미지를 넣을 때 project-placeholder를 지우고
+              아래처럼 입력합니다.
 
               <img
                 src="images/continuum-robot.jpg"
@@ -603,6 +659,54 @@
 
     </div>
   </footer>
+
+
+  <!-- Theme switching script -->
+  <script>
+    const rootElement = document.documentElement;
+
+    const themeButtons = document.querySelectorAll(
+      ".theme-option"
+    );
+
+    function applyTheme(theme) {
+      if (theme !== "light" && theme !== "dark") {
+        return;
+      }
+
+      rootElement.setAttribute(
+        "data-theme",
+        theme
+      );
+
+      localStorage.setItem(
+        "theme",
+        theme
+      );
+
+      themeButtons.forEach((button) => {
+        const isSelected =
+          button.dataset.themeValue === theme;
+
+        button.setAttribute(
+          "aria-pressed",
+          String(isSelected)
+        );
+      });
+    }
+
+    themeButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        applyTheme(
+          button.dataset.themeValue
+        );
+      });
+    });
+
+    applyTheme(
+      rootElement.getAttribute("data-theme") || "dark"
+    );
+  </script>
 
 </body>
 </html>
