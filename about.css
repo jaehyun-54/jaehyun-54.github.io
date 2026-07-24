@@ -120,12 +120,12 @@
   display: grid;
   grid-template-columns: 340px 1fr;
 
-  align-items: center;
+  align-items: start;
   gap: 70px;
 }
 
 
-/* Profile Photo */
+/* Left Large Profile Photo */
 
 .profile-photo-frame {
   position: relative;
@@ -184,7 +184,18 @@
 }
 
 
-/* Profile Information */
+/* Right Information */
+
+.profile-header-block {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 32px;
+  align-items: start;
+}
+
+.profile-header-text {
+  min-width: 0;
+}
 
 .profile-eyebrow {
   margin: 0 0 12px;
@@ -232,6 +243,76 @@
 
   font-size: 16px;
   line-height: 1.8;
+}
+
+
+/* Small ID Photo Slot */
+
+.id-photo-column {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.id-photo-frame {
+  position: relative;
+
+  width: 150px;
+  aspect-ratio: 3 / 4;
+
+  overflow: hidden;
+
+  border: 1px solid var(--profile-line);
+  border-radius: 6px;
+
+  background: var(--profile-photo-background);
+}
+
+.id-photo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.id-photo-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 8px;
+
+  color: var(--profile-muted);
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(86, 137, 216, 0.16),
+      transparent 55%
+    );
+}
+
+.id-placeholder-title {
+  color: var(--primary);
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.id-placeholder-message {
+  padding: 0 10px;
+
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 
@@ -591,13 +672,28 @@
    Tablet
 ========================================= */
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .profile-overview-grid {
-    grid-template-columns: 270px 1fr;
-
-    gap: 45px;
+    grid-template-columns: 280px 1fr;
+    gap: 42px;
   }
 
+  .profile-header-block {
+    grid-template-columns: 1fr 130px;
+    gap: 24px;
+  }
+
+  .id-photo-frame {
+    width: 130px;
+  }
+
+  .resume-grid {
+    grid-template-columns: 190px 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 850px) {
   .resume-grid {
     grid-template-columns: 190px 1fr;
 
@@ -635,6 +731,19 @@
 
   .profile-photo-column {
     width: min(100%, 330px);
+  }
+
+  .profile-header-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .id-photo-column {
+    justify-content: flex-start;
+  }
+
+  .id-photo-frame {
+    width: 140px;
   }
 
   .profile-information h1 {
