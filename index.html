@@ -15,7 +15,6 @@
     content="Personal portfolio of Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
-  <!-- 저장된 테마를 화면 표시 전에 적용 -->
   <script>
     (function () {
       const savedTheme = localStorage.getItem("theme");
@@ -249,12 +248,19 @@
 
         <div class="project-grid">
 
-          <!-- Project 1 -->
+          <!-- Project 01 -->
           <article class="project-card">
 
-            <div class="project-image project-image-blue">
+            <!-- Project Image -->
+            <div class="project-image project-publication-image">
 
-              <div class="project-placeholder">
+              <img
+                src="images/commerce-photography-robot.png"
+                alt="Portable commerce photography automation robot system"
+              >
+
+              <!-- Project name on image -->
+              <div class="project-image-label">
 
                 <span>
                   PROJECT 01
@@ -269,6 +275,7 @@
             </div>
 
 
+            <!-- Project Description -->
             <div class="project-card-content">
 
               <p class="project-category">
@@ -280,16 +287,18 @@
               </h3>
 
               <p>
-                A portable 4-DOF robotic system for standardized e-commerce
-                product photography. The system automates camera height and
-                tilt, object rotation, and perspective translation, while
-                generating shooting poses according to object size.
+                A portable 4-DOF robotic system for standardized
+                e-commerce product photography. The system automates
+                camera height and tilt, object rotation, and perspective
+                translation, while generating shooting poses according
+                to object size.
               </p>
 
               <p>
-                Experiments demonstrated stable multi-view imaging and high
-                repeatability, with pair Intersection over Union (IoU) values
-                consistently above 0.90 in random repeated trials.
+                Experiments demonstrated stable multi-view imaging and
+                high repeatability, with pair Intersection over Union
+                (IoU) values consistently above 0.90 in random repeated
+                trials.
               </p>
 
               <ul class="project-tags">
@@ -299,7 +308,7 @@
               </ul>
 
               <a
-                class="profile-link"
+                class="profile-link project-publication-link"
                 href="https://jkspe.or.kr/journal/view.php?doi=10.7736/JKSPE.025.00021"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -324,6 +333,7 @@
 
       </div>
     </section>
+
 
     <!-- News -->
     <section
@@ -491,8 +501,7 @@
 
         <div class="contact-links">
 
-          <!-- 실제 이메일로 변경 -->
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:yjh54280@korea.ac.kr">
             yjh54280@korea.ac.kr
           </a>
 
