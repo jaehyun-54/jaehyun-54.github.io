@@ -16,7 +16,7 @@
     content="Personal portfolio of Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
-  <!-- 저장된 테마를 화면 표시 전에 적용 -->
+  <!-- Apply saved theme before rendering -->
   <script>
     (function () {
       const savedTheme = localStorage.getItem("theme");
@@ -33,19 +33,24 @@
   <link rel="stylesheet" href="style.css">
 
 
-  <!-- Project Modal Style -->
+  <!-- =========================================================
+       PROJECT IMAGE + MODAL STYLE
+       ========================================================= -->
   <style>
 
-    /* =========================================================
+    /* =========================
        PROJECT IMAGE
-       ========================================================= */
+       ========================= */
 
     .project-publication-image {
       position: relative;
       width: 100%;
       min-height: 0;
+
       aspect-ratio: 1.53 / 1;
+
       padding: 0;
+
       overflow: hidden;
 
       background: #ffffff;
@@ -77,7 +82,7 @@
     }
 
 
-    /* 왼쪽 위 어두운 그라데이션 */
+    /* Gradient for upper-left title */
 
     .project-publication-image::after {
       content: "";
@@ -98,7 +103,7 @@
     }
 
 
-    /* PROJECT 01 + Photography Automation */
+    /* Project title on image */
 
     .project-image-label {
       position: absolute;
@@ -152,7 +157,7 @@
     }
 
 
-    /* Hover 시 오른쪽 아래 Details */
+    /* View Project Details */
 
     .project-image-hover {
       position: absolute;
@@ -213,9 +218,9 @@
 
 
 
-    /* =========================================================
+    /* =========================
        PROJECT MODAL
-       ========================================================= */
+       ========================= */
 
     .project-modal {
       position: fixed;
@@ -225,7 +230,6 @@
       z-index: 9999;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
 
@@ -246,8 +250,6 @@
     }
 
 
-    /* 뒤쪽 어두운 배경 */
-
     .project-modal-backdrop {
       position: absolute;
 
@@ -259,8 +261,6 @@
       backdrop-filter: blur(8px);
     }
 
-
-    /* 실제 팝업창 */
 
     .project-modal-window {
       position: relative;
@@ -304,8 +304,6 @@
     }
 
 
-    /* 스크롤바 */
-
     .project-modal-window::-webkit-scrollbar {
       width: 7px;
     }
@@ -320,7 +318,7 @@
 
 
 
-    /* X 버튼 */
+    /* Close button */
 
     .project-modal-close {
       position: absolute;
@@ -371,13 +369,10 @@
 
 
 
-    /* PROJECT 01 */
+    /* Modal Header */
 
     .project-modal-number {
-      margin:
-        0
-        0
-        10px;
+      margin: 0 0 10px;
 
       color: #72aaff;
 
@@ -389,9 +384,6 @@
       text-transform: uppercase;
     }
 
-
-
-    /* Photography Automation */
 
     .project-modal-window h2 {
       margin: 0;
@@ -411,14 +403,8 @@
     }
 
 
-
-    /* 논문 제목 */
-
     .project-modal-paper-title {
-      margin:
-        14px
-        0
-        0;
+      margin: 14px 0 0;
 
       max-width: 480px;
 
@@ -430,14 +416,11 @@
     }
 
 
-
     .project-modal-divider {
       width: 100%;
       height: 1px;
 
-      margin:
-        28px
-        0;
+      margin: 28px 0;
 
       background:
         rgba(255, 255, 255, 0.09);
@@ -445,7 +428,7 @@
 
 
 
-    /* 상세 내용 */
+    /* Modal Content */
 
     .project-modal-section {
       margin-bottom: 25px;
@@ -453,10 +436,7 @@
 
 
     .project-modal-section h3 {
-      margin:
-        0
-        0
-        9px;
+      margin: 0 0 9px;
 
       color: #72aaff;
 
@@ -499,7 +479,7 @@
 
 
 
-    /* Publication 버튼 */
+    /* Publication button */
 
     .project-modal-publication {
       display: inline-flex;
@@ -510,9 +490,7 @@
 
       margin-top: 2px;
 
-      padding:
-        12px
-        18px;
+      padding: 12px 18px;
 
       border:
         1px solid
@@ -545,9 +523,9 @@
 
 
 
-    /* =========================================================
+    /* =========================
        LIGHT MODE
-       ========================================================= */
+       ========================= */
 
     html[data-theme="light"]
     .project-modal-window {
@@ -601,9 +579,9 @@
 
 
 
-    /* =========================================================
+    /* =========================
        MOBILE
-       ========================================================= */
+       ========================= */
 
     @media (max-width: 700px) {
 
@@ -702,7 +680,6 @@
             <span>
               Light
             </span>
-
           </button>
 
 
@@ -722,7 +699,6 @@
             <span>
               Dark
             </span>
-
           </button>
 
         </div>
@@ -763,10 +739,8 @@
 
 
           <p class="hero-description">
-
             I’m a graduate student in Mechanical Engineering
             at Korea University.
-
           </p>
 
 
@@ -776,11 +750,9 @@
               hero-description-secondary
             "
           >
-
             My research interests include continuum robots,
             medical robotics, bio-inspired mechanisms,
             and smart material actuators.
-
           </p>
 
 
@@ -841,7 +813,6 @@
           ></div>
 
 
-
           <div class="focus-panel">
 
             <p class="focus-label">
@@ -850,46 +821,26 @@
 
 
             <div class="focus-item">
-              <span>
-                01
-              </span>
-
-              <strong>
-                Continuum Robots
-              </strong>
+              <span>01</span>
+              <strong>Continuum Robots</strong>
             </div>
 
 
             <div class="focus-item">
-              <span>
-                02
-              </span>
-
-              <strong>
-                Medical Robotics
-              </strong>
+              <span>02</span>
+              <strong>Medical Robotics</strong>
             </div>
 
 
             <div class="focus-item">
-              <span>
-                03
-              </span>
-
-              <strong>
-                Bio-inspired
-              </strong>
+              <span>03</span>
+              <strong>Bio-inspired</strong>
             </div>
 
 
             <div class="focus-item">
-              <span>
-                04
-              </span>
-
-              <strong>
-                Smart material Actuators
-              </strong>
+              <span>04</span>
+              <strong>Smart material Actuators</strong>
             </div>
 
           </div>
@@ -939,20 +890,16 @@
           <div class="about-preview-content">
 
             <p>
-
               My research focuses on robotic mechanisms that can
               adapt their shape and configuration to complex
               environments.
-
             </p>
 
 
             <p>
-
               I am currently developing a modular continuum robot
               with independently lockable segments and zero-power
               posture maintenance.
-
             </p>
 
 
@@ -1037,21 +984,13 @@
               data-modal="project01-modal"
               role="button"
               tabindex="0"
-              aria-label="
-                View Photography Automation
-                project details
-              "
+              aria-label="View Photography Automation project details"
             >
 
 
               <img
-                src="
-                  images/commerce-photography-robot.png
-                "
-                alt="
-                  Portable commerce photography
-                  automation robot system
-                "
+                src="images/commerce-photography-robot.png"
+                alt="Portable commerce photography automation robot system"
               >
 
 
@@ -1094,23 +1033,19 @@
 
 
               <p>
-
                 A portable 4-DOF robotic system for standardized
                 e-commerce product photography. The system
                 automates camera height and tilt, object rotation,
                 and perspective translation, while generating
                 shooting poses according to object size.
-
               </p>
 
 
               <p>
-
                 Experiments demonstrated stable multi-view imaging
                 and high repeatability, with pair Intersection over
                 Union (IoU) values consistently above 0.90 in
                 random repeated trials.
-
               </p>
 
 
@@ -1136,9 +1071,7 @@
                   profile-link
                   project-publication-link
                 "
-                href="
-                  https://jkspe.or.kr/journal/view.php?doi=10.7736/JKSPE.025.00021
-                "
+                href="https://jkspe.or.kr/journal/view.php?doi=10.7736/JKSPE.025.00021"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1155,218 +1088,6 @@
                 </span>
 
               </a>
-
-
-            </div>
-
-
-          </article>
-
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================================================
-         NEWS
-         ========================================================= -->
-
-    <section
-      id="news"
-      class="
-        section
-        news-section
-      "
-    >
-
-      <div class="container">
-
-
-        <p class="section-label">
-          NEWS
-        </p>
-
-
-        <div class="section-heading">
-
-          <h2>
-            Recent Updates
-          </h2>
-
-
-          <p>
-
-            Research activities, project updates,
-            presentations, and announcements.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="news-list">
-
-
-          <!-- News 1 -->
-
-          <article class="news-item">
-
-
-            <time datetime="2026-07-24">
-
-              JUL 24, 2026
-
-            </time>
-
-
-            <div class="news-content">
-
-
-              <p class="news-category">
-                WEBSITE
-              </p>
-
-
-              <h3>
-                Personal portfolio website launched
-              </h3>
-
-
-              <p>
-
-                I launched this website to share my research,
-                projects, experiments, and recent activities.
-
-              </p>
-
-
-            </div>
-
-
-          </article>
-
-
-
-          <!-- News 2 -->
-
-          <article class="news-item">
-
-
-            <time datetime="2026-07">
-
-              JUL 2026
-
-            </time>
-
-
-            <div class="news-content">
-
-
-              <p class="news-category">
-                EXPERIMENT
-              </p>
-
-
-              <h3>
-                Vision-based workspace evaluation
-              </h3>
-
-
-              <p>
-
-                I developed a camera-based experimental setup
-                for measuring end-tip trajectories and visualizing
-                the workspace of a modular continuum robot.
-
-              </p>
-
-
-            </div>
-
-
-          </article>
-
-
-
-          <!-- News 3 -->
-
-          <article class="news-item">
-
-
-            <time datetime="2026-07">
-
-              JUL 2026
-
-            </time>
-
-
-            <div class="news-content">
-
-
-              <p class="news-category">
-                HARDWARE
-              </p>
-
-
-              <h3>
-                SMA actuator control system updated
-              </h3>
-
-
-              <p>
-
-                The SMA actuator control system was updated
-                with dedicated MOSFET channels for independent
-                control of multiple robot modules.
-
-              </p>
-
-
-            </div>
-
-
-          </article>
-
-
-
-          <!-- News 4 -->
-
-          <article class="news-item">
-
-
-            <time datetime="2026">
-
-              2026
-
-            </time>
-
-
-            <div class="news-content">
-
-
-              <p class="news-category">
-                RESEARCH
-              </p>
-
-
-              <h3>
-                Shape-lockable continuum robot development
-              </h3>
-
-
-              <p>
-
-                I am developing a modular continuum robot
-                capable of independent segment control and
-                zero-power posture maintenance.
-
-              </p>
 
 
             </div>
@@ -1413,22 +1134,16 @@
 
 
         <p class="contact-description">
-
           Feel free to reach out for research collaboration,
           project discussions, or other opportunities.
-
         </p>
 
 
         <div class="contact-links">
 
-
           <a href="mailto:yjh54280@korea.ac.kr">
-
             yjh54280@korea.ac.kr
-
           </a>
-
 
         </div>
 
@@ -1453,13 +1168,9 @@
   >
 
 
-    <!-- Click this area to close -->
-
     <div class="project-modal-backdrop"></div>
 
 
-
-    <!-- Popup -->
 
     <div
       class="project-modal-window"
@@ -1492,10 +1203,8 @@
 
 
       <p class="project-modal-paper-title">
-
         Development of a Portable Commerce
         Photography Automation Robot
-
       </p>
 
 
@@ -1514,11 +1223,9 @@
 
 
         <p>
-
           This project presents a portable robotic system
           designed to automate standardized product photography
           for e-commerce applications.
-
         </p>
 
       </div>
@@ -1535,13 +1242,11 @@
 
 
         <p>
-
           The robot provides four degrees of freedom to control
           camera height, camera angle, object rotation, and
           perspective translation. Shooting poses are
           automatically generated according to the dimensions
           of the target object.
-
         </p>
 
       </div>
@@ -1595,12 +1300,10 @@
 
 
         <p>
-
           Repeated photography experiments demonstrated stable
           multi-view image acquisition and high positional
           repeatability, with pair Intersection over Union (IoU)
           values exceeding 0.90 in random repeated trials.
-
         </p>
 
       </div>
@@ -1611,9 +1314,7 @@
 
       <a
         class="project-modal-publication"
-        href="
-          https://jkspe.or.kr/journal/view.php?doi=10.7736/JKSPE.025.00021
-        "
+        href="https://jkspe.or.kr/journal/view.php?doi=10.7736/JKSPE.025.00021"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -1949,9 +1650,11 @@
 
 
           if (activeModal) {
+
             closeProjectModal(
               activeModal
             );
+
           }
 
         }
