@@ -16,7 +16,6 @@
     content="Personal portfolio of Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
-  <!-- Apply saved theme before rendering -->
   <script>
     (function () {
       const savedTheme = localStorage.getItem("theme");
@@ -32,22 +31,18 @@
 
   <link rel="stylesheet" href="style.css">
 
-
-  <!-- =========================================================
-       PROJECT IMAGE + MODAL STYLE
-       ========================================================= -->
   <style>
 
-    /* =========================
+    /* =========================================================
        PROJECT IMAGE
-       ========================= */
+       ========================================================= */
 
     .project-publication-image {
       position: relative;
       width: 100%;
       min-height: 0;
 
-      aspect-ratio: 1.53 / 1;
+      aspect-ratio: 1.5 / 1;
 
       padding: 0;
 
@@ -82,8 +77,6 @@
     }
 
 
-    /* Gradient for upper-left title */
-
     .project-publication-image::after {
       content: "";
 
@@ -93,17 +86,15 @@
       background:
         linear-gradient(
           135deg,
-          rgba(7, 21, 42, 0.82) 0%,
-          rgba(7, 21, 42, 0.55) 16%,
-          rgba(7, 21, 42, 0.12) 37%,
+          rgba(7, 21, 42, 0.84) 0%,
+          rgba(7, 21, 42, 0.57) 16%,
+          rgba(7, 21, 42, 0.14) 37%,
           rgba(7, 21, 42, 0) 55%
         );
 
       pointer-events: none;
     }
 
-
-    /* Project title on image */
 
     .project-image-label {
       position: absolute;
@@ -118,7 +109,7 @@
 
       gap: 7px;
 
-      max-width: 330px;
+      max-width: 350px;
 
       pointer-events: none;
     }
@@ -153,11 +144,9 @@
       letter-spacing: -0.02em;
 
       text-shadow:
-        0 2px 10px rgba(0, 0, 0, 0.45);
+        0 2px 10px rgba(0, 0, 0, 0.48);
     }
 
-
-    /* View Project Details */
 
     .project-image-hover {
       position: absolute;
@@ -166,11 +155,6 @@
       bottom: 18px;
 
       z-index: 4;
-
-      display: flex;
-      align-items: center;
-
-      gap: 8px;
 
       padding: 9px 14px;
 
@@ -207,7 +191,6 @@
     .project-publication-image:hover
     .project-image-hover {
       opacity: 1;
-
       transform: translateY(0);
     }
 
@@ -218,9 +201,9 @@
 
 
 
-    /* =========================
+    /* =========================================================
        PROJECT MODAL
-       ========================= */
+       ========================================================= */
 
     .project-modal {
       position: fixed;
@@ -317,9 +300,6 @@
     }
 
 
-
-    /* Close button */
-
     .project-modal-close {
       position: absolute;
 
@@ -327,7 +307,6 @@
       right: 20px;
 
       display: flex;
-
       align-items: center;
       justify-content: center;
 
@@ -348,9 +327,6 @@
       color: #ffffff;
 
       font-size: 1.55rem;
-      font-weight: 300;
-
-      line-height: 1;
 
       cursor: pointer;
 
@@ -367,9 +343,6 @@
       transform: rotate(6deg);
     }
 
-
-
-    /* Modal Header */
 
     .project-modal-number {
       margin: 0 0 10px;
@@ -390,7 +363,7 @@
 
       padding-right: 40px;
 
-      max-width: 450px;
+      max-width: 460px;
 
       color: #ffffff;
 
@@ -426,9 +399,6 @@
         rgba(255, 255, 255, 0.09);
     }
 
-
-
-    /* Modal Content */
 
     .project-modal-section {
       margin-bottom: 25px;
@@ -478,12 +448,8 @@
     }
 
 
-
-    /* Publication button */
-
     .project-modal-publication {
       display: inline-flex;
-
       align-items: center;
 
       gap: 12px;
@@ -523,9 +489,9 @@
 
 
 
-    /* =========================
+    /* =========================================================
        LIGHT MODE
-       ========================= */
+       ========================================================= */
 
     html[data-theme="light"]
     .project-modal-window {
@@ -579,9 +545,9 @@
 
 
 
-    /* =========================
+    /* =========================================================
        MOBILE
-       ========================= */
+       ========================================================= */
 
     @media (max-width: 700px) {
 
@@ -637,7 +603,6 @@
   </style>
 
 </head>
-
 
 
 <body id="top">
@@ -973,8 +938,6 @@
           <article class="project-card">
 
 
-            <!-- Clickable Project Image -->
-
             <div
               class="
                 project-image
@@ -1015,8 +978,6 @@
             </div>
 
 
-
-            <!-- Project Description -->
 
             <div class="project-card-content">
 
@@ -1096,6 +1057,108 @@
           </article>
 
 
+
+          <!-- ===================================================
+               PROJECT 02
+               =================================================== -->
+
+          <article class="project-card">
+
+
+            <div
+              class="
+                project-image
+                project-publication-image
+                project-modal-trigger
+              "
+              data-modal="project02-modal"
+              role="button"
+              tabindex="0"
+              aria-label="View Hyundai AutoEver Mentoring project details"
+            >
+
+
+              <img
+                src="images/hyundai-autoever-mentoring.png"
+                alt="Hyundai AutoEver mentoring program group photo"
+              >
+
+
+              <div class="project-image-label">
+
+                <span>
+                  PROJECT 02
+                </span>
+
+                <strong>
+                  Hyundai AutoEver Mentoring
+                </strong>
+
+              </div>
+
+
+              <div class="project-image-hover">
+                View Project Details →
+              </div>
+
+
+            </div>
+
+
+
+            <div class="project-card-content">
+
+
+              <p class="project-category">
+                ENGINEERING EDUCATION · MENTORING
+              </p>
+
+
+              <h3>
+                Hyundai AutoEver
+                Smart Mobility Engineering Mentoring
+              </h3>
+
+
+              <p>
+                Served as an engineering mentor in a Hyundai
+                AutoEver educational program, supporting students
+                in understanding concepts related to mechanical
+                design and control.
+              </p>
+
+
+              <p>
+                The experience strengthened my ability to organize
+                technical knowledge clearly and communicate
+                engineering concepts effectively through
+                discussion and knowledge sharing.
+              </p>
+
+
+              <ul class="project-tags">
+
+                <li>
+                  Engineering Mentoring
+                </li>
+
+                <li>
+                  Mechanical Design
+                </li>
+
+                <li>
+                  Control
+                </li>
+
+              </ul>
+
+
+            </div>
+
+
+          </article>
+
+
         </div>
 
 
@@ -1167,9 +1230,7 @@
     aria-hidden="true"
   >
 
-
     <div class="project-modal-backdrop"></div>
-
 
 
     <div
@@ -1189,17 +1250,14 @@
       </button>
 
 
-
       <p class="project-modal-number">
         PROJECT 01
       </p>
 
 
-
       <h2 id="project01-modal-title">
         Photography Automation
       </h2>
-
 
 
       <p class="project-modal-paper-title">
@@ -1208,19 +1266,14 @@
       </p>
 
 
-
       <div class="project-modal-divider"></div>
 
-
-
-      <!-- Overview -->
 
       <div class="project-modal-section">
 
         <h3>
           Overview
         </h3>
-
 
         <p>
           This project presents a portable robotic system
@@ -1231,15 +1284,11 @@
       </div>
 
 
-
-      <!-- System -->
-
       <div class="project-modal-section">
 
         <h3>
           System
         </h3>
-
 
         <p>
           The robot provides four degrees of freedom to control
@@ -1252,15 +1301,11 @@
       </div>
 
 
-
-      <!-- Key Features -->
-
       <div class="project-modal-section">
 
         <h3>
           Key Features
         </h3>
-
 
         <ul>
 
@@ -1289,15 +1334,11 @@
       </div>
 
 
-
-      <!-- Experimental Results -->
-
       <div class="project-modal-section">
 
         <h3>
           Experimental Results
         </h3>
-
 
         <p>
           Repeated photography experiments demonstrated stable
@@ -1309,23 +1350,152 @@
       </div>
 
 
-
-      <!-- Publication -->
-
       <a
         class="project-modal-publication"
         href="https://jkspe.or.kr/journal/view.php?doi=10.7736/JKSPE.025.00021"
         target="_blank"
         rel="noopener noreferrer"
       >
-
         View Publication
-
-        <span>
-          →
-        </span>
-
+        <span>→</span>
       </a>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =========================================================
+       PROJECT 02 MODAL
+       ========================================================= -->
+
+  <div
+    class="project-modal"
+    id="project02-modal"
+    aria-hidden="true"
+  >
+
+    <div class="project-modal-backdrop"></div>
+
+
+    <div
+      class="project-modal-window"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project02-modal-title"
+    >
+
+
+      <button
+        class="project-modal-close"
+        type="button"
+        aria-label="Close project details"
+      >
+        ×
+      </button>
+
+
+      <p class="project-modal-number">
+        PROJECT 02
+      </p>
+
+
+      <h2 id="project02-modal-title">
+        Hyundai AutoEver Mentoring
+      </h2>
+
+
+      <p class="project-modal-paper-title">
+        Smart Mobility Engineering Education
+      </p>
+
+
+      <div class="project-modal-divider"></div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          Overview
+        </h3>
+
+        <p>
+          I participated as an engineering mentor in a
+          Hyundai AutoEver educational program focused on
+          introducing students to engineering and smart
+          mobility-related concepts.
+        </p>
+
+      </div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          My Role
+        </h3>
+
+        <p>
+          As a mentor, I supported students in understanding
+          technical concepts related to mechanical design and
+          control and helped them approach engineering topics
+          through structured explanation and discussion.
+        </p>
+
+      </div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          Key Activities
+        </h3>
+
+        <ul>
+
+          <li>
+            Engineering mentoring for students
+          </li>
+
+          <li>
+            Explanation of mechanical design concepts
+          </li>
+
+          <li>
+            Discussion of control-related fundamentals
+          </li>
+
+          <li>
+            Technical problem-solving support
+          </li>
+
+          <li>
+            Communication and knowledge sharing
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          Experience
+        </h3>
+
+        <p>
+          The mentoring experience taught me that effectively
+          communicating technical knowledge requires a deep
+          understanding of the underlying concepts and the
+          ability to organize them clearly. It also reinforced
+          the importance of communication and knowledge sharing
+          in collaborative engineering environments.
+        </p>
+
+      </div>
 
 
     </div>
@@ -1347,7 +1517,6 @@
       "
     >
 
-
       <p>
         © 2026 Jaehyun Yoon
       </p>
@@ -1356,7 +1525,6 @@
       <a href="#top">
         Back to top ↑
       </a>
-
 
     </div>
 
@@ -1555,7 +1723,6 @@
               event.key === " "
             ) {
 
-
               event.preventDefault();
 
 
@@ -1606,9 +1773,7 @@
           closeButton.addEventListener(
             "click",
             () => {
-
               closeProjectModal(modal);
-
             }
           );
 
@@ -1621,9 +1786,7 @@
           backdrop.addEventListener(
             "click",
             () => {
-
               closeProjectModal(modal);
-
             }
           );
 
@@ -1658,7 +1821,6 @@
           }
 
         }
-
 
       }
     );
