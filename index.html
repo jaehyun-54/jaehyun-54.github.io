@@ -45,7 +45,6 @@
       aspect-ratio: 1.5 / 1;
 
       padding: 0;
-
       overflow: hidden;
 
       background: #ffffff;
@@ -71,6 +70,19 @@
     }
 
 
+    /* Photo projects */
+    .project-publication-image img.project-photo {
+      object-fit: cover;
+    }
+
+
+    /* Team KAI portrait photo positioning */
+    .project-publication-image img.team-kai-photo {
+      object-fit: cover;
+      object-position: center 59%;
+    }
+
+
     .project-publication-image:hover img {
       transform: scale(1.012);
       filter: brightness(0.90);
@@ -86,8 +98,8 @@
       background:
         linear-gradient(
           135deg,
-          rgba(7, 21, 42, 0.84) 0%,
-          rgba(7, 21, 42, 0.57) 16%,
+          rgba(7, 21, 42, 0.86) 0%,
+          rgba(7, 21, 42, 0.58) 16%,
           rgba(7, 21, 42, 0.14) 37%,
           rgba(7, 21, 42, 0) 55%
         );
@@ -109,7 +121,7 @@
 
       gap: 7px;
 
-      max-width: 350px;
+      max-width: 360px;
 
       pointer-events: none;
     }
@@ -124,7 +136,6 @@
       font-weight: 800;
 
       letter-spacing: 0.18em;
-
       line-height: 1;
 
       text-transform: uppercase;
@@ -140,7 +151,6 @@
       font-weight: 800;
 
       line-height: 1.15;
-
       letter-spacing: -0.02em;
 
       text-shadow:
@@ -175,7 +185,6 @@
       letter-spacing: 0.04em;
 
       opacity: 0;
-
       transform: translateY(6px);
 
       transition:
@@ -235,7 +244,6 @@
 
     .project-modal-backdrop {
       position: absolute;
-
       inset: 0;
 
       background:
@@ -251,7 +259,6 @@
       z-index: 2;
 
       width: min(580px, 100%);
-
       max-height: 84vh;
 
       overflow-y: auto;
@@ -363,7 +370,7 @@
 
       padding-right: 40px;
 
-      max-width: 460px;
+      max-width: 470px;
 
       color: #ffffff;
 
@@ -371,7 +378,6 @@
       font-weight: 800;
 
       line-height: 1.1;
-
       letter-spacing: -0.03em;
     }
 
@@ -384,7 +390,6 @@
       color: #aebed5;
 
       font-size: 0.92rem;
-
       line-height: 1.55;
     }
 
@@ -425,7 +430,6 @@
       color: #d4deeb;
 
       font-size: 0.94rem;
-
       line-height: 1.7;
     }
 
@@ -443,7 +447,6 @@
       margin: 7px 0;
 
       font-size: 0.94rem;
-
       line-height: 1.55;
     }
 
@@ -608,9 +611,7 @@
 <body id="top">
 
 
-  <!-- =========================================================
-       HEADER
-       ========================================================= -->
+  <!-- HEADER -->
 
   <header class="site-header">
 
@@ -635,10 +636,7 @@
             data-theme-value="light"
             aria-pressed="false"
           >
-            <span
-              class="theme-icon"
-              aria-hidden="true"
-            >
+            <span class="theme-icon" aria-hidden="true">
               ☀
             </span>
 
@@ -654,10 +652,7 @@
             data-theme-value="dark"
             aria-pressed="true"
           >
-            <span
-              class="theme-icon"
-              aria-hidden="true"
-            >
+            <span class="theme-icon" aria-hidden="true">
               ☾
             </span>
 
@@ -679,9 +674,7 @@
   <main>
 
 
-    <!-- =========================================================
-         HERO
-         ========================================================= -->
+    <!-- HERO -->
 
     <section class="hero">
 
@@ -744,38 +737,16 @@
 
 
 
-        <!-- Current Focus -->
-
         <div class="hero-visual">
 
-          <div
-            class="
-              visual-orbit
-              orbit-one
-            "
-          ></div>
+          <div class="visual-orbit orbit-one"></div>
 
-          <div
-            class="
-              visual-orbit
-              orbit-two
-            "
-          ></div>
+          <div class="visual-orbit orbit-two"></div>
 
 
-          <div
-            class="
-              visual-dot
-              dot-one
-            "
-          ></div>
+          <div class="visual-dot dot-one"></div>
 
-          <div
-            class="
-              visual-dot
-              dot-two
-            "
-          ></div>
+          <div class="visual-dot dot-two"></div>
 
 
           <div class="focus-panel">
@@ -819,9 +790,7 @@
 
 
 
-    <!-- =========================================================
-         ABOUT ME
-         ========================================================= -->
+    <!-- ABOUT ME -->
 
     <section
       class="
@@ -877,7 +846,6 @@
                 View Full Profile
               </span>
 
-
               <span
                 class="profile-link-arrow"
                 aria-hidden="true"
@@ -898,9 +866,7 @@
 
 
 
-    <!-- =========================================================
-         PROJECTS
-         ========================================================= -->
+    <!-- PROJECTS -->
 
     <section
       id="projects"
@@ -950,7 +916,6 @@
               aria-label="View Photography Automation project details"
             >
 
-
               <img
                 src="images/commerce-photography-robot.png"
                 alt="Portable commerce photography automation robot system"
@@ -973,7 +938,6 @@
               <div class="project-image-hover">
                 View Project Details →
               </div>
-
 
             </div>
 
@@ -1012,17 +976,11 @@
 
               <ul class="project-tags">
 
-                <li>
-                  4-DOF Robot
-                </li>
+                <li>4-DOF Robot</li>
 
-                <li>
-                  Photography Automation
-                </li>
+                <li>Photography Automation</li>
 
-                <li>
-                  Pose Planning
-                </li>
+                <li>Pose Planning</li>
 
               </ul>
 
@@ -1077,8 +1035,8 @@
               aria-label="View Hyundai AutoEver Mentoring project details"
             >
 
-
               <img
+                class="project-photo"
                 src="images/hyundai-autoever-mentoring.png"
                 alt="Hyundai AutoEver mentoring program group photo"
               >
@@ -1100,7 +1058,6 @@
               <div class="project-image-hover">
                 View Project Details →
               </div>
-
 
             </div>
 
@@ -1159,6 +1116,109 @@
           </article>
 
 
+
+          <!-- ===================================================
+               PROJECT 03
+               =================================================== -->
+
+          <article class="project-card">
+
+
+            <div
+              class="
+                project-image
+                project-publication-image
+                project-modal-trigger
+              "
+              data-modal="project03-modal"
+              role="button"
+              tabindex="0"
+              aria-label="View Team KAI Autonomous Vehicle project details"
+            >
+
+              <img
+                class="team-kai-photo"
+                src="images/team-kai-autonomous-vehicle.png"
+                alt="Team KAI autonomous vehicle competition"
+              >
+
+
+              <div class="project-image-label">
+
+                <span>
+                  PROJECT 03
+                </span>
+
+                <strong>
+                  Autonomous Vehicle Development
+                </strong>
+
+              </div>
+
+
+              <div class="project-image-hover">
+                View Project Details →
+              </div>
+
+            </div>
+
+
+
+            <div class="project-card-content">
+
+
+              <p class="project-category">
+                AUTONOMOUS VEHICLE · MECHANICAL DESIGN
+              </p>
+
+
+              <h3>
+                Team KAI Autonomous Vehicle Development
+              </h3>
+
+
+              <p>
+                Participated in the 2024 Student Creative Mobility
+                Competition as a mechanical design member of
+                Team KAI at Konkuk University.
+              </p>
+
+
+              <p>
+                Worked on vehicle hardware design and modification
+                for autonomous driving, including component
+                placement, structural evaluation, and mechanical
+                adjustments to improve vehicle stability.
+              </p>
+
+
+              <ul class="project-tags">
+
+                <li>
+                  Autonomous Vehicle
+                </li>
+
+                <li>
+                  Mechanical Design
+                </li>
+
+                <li>
+                  Structural Analysis
+                </li>
+
+                <li>
+                  Vehicle Dynamics
+                </li>
+
+              </ul>
+
+
+            </div>
+
+
+          </article>
+
+
         </div>
 
 
@@ -1168,9 +1228,7 @@
 
 
 
-    <!-- =========================================================
-         CONTACT
-         ========================================================= -->
+    <!-- CONTACT -->
 
     <section
       id="contact"
@@ -1240,7 +1298,6 @@
       aria-labelledby="project01-modal-title"
     >
 
-
       <button
         class="project-modal-close"
         type="button"
@@ -1308,27 +1365,11 @@
         </h3>
 
         <ul>
-
-          <li>
-            Portable 4-DOF photography robot
-          </li>
-
-          <li>
-            Automatic camera height and tilt adjustment
-          </li>
-
-          <li>
-            Automated multi-view object rotation
-          </li>
-
-          <li>
-            Perspective adjustment along the X-axis
-          </li>
-
-          <li>
-            Object-size-based shooting pose generation
-          </li>
-
+          <li>Portable 4-DOF photography robot</li>
+          <li>Automatic camera height and tilt adjustment</li>
+          <li>Automated multi-view object rotation</li>
+          <li>Perspective adjustment along the X-axis</li>
+          <li>Object-size-based shooting pose generation</li>
         </ul>
 
       </div>
@@ -1386,7 +1427,6 @@
       aria-modal="true"
       aria-labelledby="project02-modal-title"
     >
-
 
       <button
         class="project-modal-close"
@@ -1454,27 +1494,11 @@
         </h3>
 
         <ul>
-
-          <li>
-            Engineering mentoring for students
-          </li>
-
-          <li>
-            Explanation of mechanical design concepts
-          </li>
-
-          <li>
-            Discussion of control-related fundamentals
-          </li>
-
-          <li>
-            Technical problem-solving support
-          </li>
-
-          <li>
-            Communication and knowledge sharing
-          </li>
-
+          <li>Engineering mentoring for students</li>
+          <li>Explanation of mechanical design concepts</li>
+          <li>Discussion of control-related fundamentals</li>
+          <li>Technical problem-solving support</li>
+          <li>Communication and knowledge sharing</li>
         </ul>
 
       </div>
@@ -1487,12 +1511,10 @@
         </h3>
 
         <p>
-          The mentoring experience taught me that effectively
-          communicating technical knowledge requires a deep
-          understanding of the underlying concepts and the
-          ability to organize them clearly. It also reinforced
-          the importance of communication and knowledge sharing
-          in collaborative engineering environments.
+          The mentoring experience strengthened my ability to
+          communicate technical knowledge clearly and reinforced
+          the importance of collaboration and knowledge sharing
+          in engineering environments.
         </p>
 
       </div>
@@ -1505,8 +1527,141 @@
 
 
   <!-- =========================================================
-       FOOTER
+       PROJECT 03 MODAL
        ========================================================= -->
+
+  <div
+    class="project-modal"
+    id="project03-modal"
+    aria-hidden="true"
+  >
+
+    <div class="project-modal-backdrop"></div>
+
+
+    <div
+      class="project-modal-window"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project03-modal-title"
+    >
+
+      <button
+        class="project-modal-close"
+        type="button"
+        aria-label="Close project details"
+      >
+        ×
+      </button>
+
+
+      <p class="project-modal-number">
+        PROJECT 03
+      </p>
+
+
+      <h2 id="project03-modal-title">
+        Team KAI Autonomous Vehicle
+      </h2>
+
+
+      <p class="project-modal-paper-title">
+        2024 Student Creative Mobility Competition
+      </p>
+
+
+      <div class="project-modal-divider"></div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          Overview
+        </h3>
+
+        <p>
+          Developed a student-built autonomous vehicle as a
+          member of Team KAI at Konkuk University for the
+          2024 Student Creative Mobility Competition.
+        </p>
+
+      </div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          My Role
+        </h3>
+
+        <p>
+          I was responsible for mechanical design and vehicle
+          hardware development, working closely with electrical,
+          control, perception, and planning members to prepare
+          the vehicle for autonomous driving.
+        </p>
+
+      </div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          Key Contributions
+        </h3>
+
+        <ul>
+
+          <li>
+            Optimized electronic component placement considering
+            center of gravity, heat dissipation, and vibration
+          </li>
+
+          <li>
+            Performed structural stress evaluation using Altair
+          </li>
+
+          <li>
+            Supported steering and braking system integration
+          </li>
+
+          <li>
+            Adjusted toe and camber angles to improve
+            path-following stability
+          </li>
+
+          <li>
+            Collaborated with electrical, control, perception,
+            and planning teams
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="project-modal-section">
+
+        <h3>
+          Result
+        </h3>
+
+        <p>
+          The team advanced to the final round of the competition
+          and achieved full scores in the braking and vehicle
+          inspection evaluations.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- FOOTER -->
 
   <footer>
 
@@ -1532,9 +1687,7 @@
 
 
 
-  <!-- =========================================================
-       THEME SCRIPT
-       ========================================================= -->
+  <!-- THEME SCRIPT -->
 
   <script>
 
@@ -1616,9 +1769,7 @@
 
 
 
-  <!-- =========================================================
-       PROJECT MODAL SCRIPT
-       ========================================================= -->
+  <!-- PROJECT MODAL SCRIPT -->
 
   <script>
 
@@ -1767,7 +1918,6 @@
           );
 
 
-
         if (closeButton) {
 
           closeButton.addEventListener(
@@ -1778,7 +1928,6 @@
           );
 
         }
-
 
 
         if (backdrop) {
@@ -1821,6 +1970,7 @@
           }
 
         }
+
 
       }
     );
