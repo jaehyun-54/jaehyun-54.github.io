@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -8,60 +10,103 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>About Me | Jaehyun Yoon</title>
+  <title>
+    About Me | Jaehyun Yoon
+  </title>
 
   <meta
     name="description"
     content="Jaehyun Yoon, a graduate student in Mechanical Engineering at Korea University."
   >
 
+
   <!-- Apply the saved theme before rendering -->
   <script>
-    (function () {
-      const savedTheme = localStorage.getItem("theme");
 
-      if (savedTheme === "light" || savedTheme === "dark") {
+    (function () {
+
+      const savedTheme =
+        localStorage.getItem("theme");
+
+      if (
+        savedTheme === "light" ||
+        savedTheme === "dark"
+      ) {
+
         document.documentElement.setAttribute(
           "data-theme",
           savedTheme
         );
+
       }
+
     })();
+
   </script>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="about.css">
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="about.css"
+  >
+
 </head>
 
-<body id="top" class="about-page">
 
-  <!-- Header -->
+
+<body
+  id="top"
+  class="about-page"
+>
+
+
+  <!-- ====================================================== -->
+  <!-- HEADER                                                 -->
+  <!-- ====================================================== -->
+
   <header class="site-header">
+
     <div class="container header-inner">
+
 
       <a
         class="logo"
         href="index.html"
         aria-label="Go to homepage"
       >
+
         YJH
+
       </a>
 
+
       <div class="header-actions">
+
 
         <a
           class="home-link"
           href="index.html"
         >
+
           ← Home
+
         </a>
 
+
+
         <!-- Theme Switch -->
+
         <div
           class="theme-switch"
           role="group"
           aria-label="Select color theme"
         >
+
 
           <button
             class="theme-option"
@@ -69,17 +114,26 @@
             data-theme-value="light"
             aria-pressed="false"
           >
+
             <span
               class="theme-icon"
               aria-hidden="true"
             >
+
               ☀
+
             </span>
 
+
             <span>
+
               Light
+
             </span>
+
           </button>
+
+
 
           <button
             class="theme-option"
@@ -87,37 +141,65 @@
             data-theme-value="dark"
             aria-pressed="true"
           >
+
             <span
               class="theme-icon"
               aria-hidden="true"
             >
+
               ☾
+
             </span>
 
+
             <span>
+
               Dark
+
             </span>
+
           </button>
+
 
         </div>
 
+
       </div>
 
+
     </div>
+
   </header>
+
+
+
 
 
   <main class="profile-main">
 
-    <!-- Profile Overview -->
+
+    <!-- ==================================================== -->
+    <!-- PROFILE OVERVIEW                                     -->
+    <!-- ==================================================== -->
+
     <section class="profile-overview">
 
-      <div class="profile-container profile-overview-grid">
+
+      <div
+        class="
+          profile-container
+          profile-overview-grid
+        "
+      >
+
 
         <!-- Large Personal Photo -->
+
         <div class="profile-photo-column">
 
+
           <div class="profile-photo-frame">
+
 
             <img
               class="profile-photo"
@@ -129,55 +211,95 @@
               "
             >
 
+
             <div class="profile-photo-placeholder">
 
+
               <span class="placeholder-initials">
+
                 YJH
+
               </span>
 
+
               <span class="placeholder-message">
+
                 Upload profile.jpg
+
               </span>
+
 
             </div>
 
+
           </div>
+
 
         </div>
 
 
+
+
         <!-- Profile Information -->
+
         <div class="profile-information">
 
+
           <!-- Name and ID Photo -->
+
           <div class="profile-header-block">
+
 
             <div class="profile-header-text">
 
+
               <p class="profile-eyebrow">
+
                 MECHANICAL ENGINEERING · ROBOTICS
+
               </p>
+
 
               <h1>
+
                 Jaehyun Yoon
+
               </h1>
 
+
               <p class="profile-position">
+
                 Graduate Student
+
               </p>
 
+
               <p class="profile-affiliation">
-                Department of Mechanical Engineering<br>
-                <strong>Korea University</strong>
+
+                Department of Mechanical Engineering
+                <br>
+
+                <strong>
+
+                  Korea University
+
+                </strong>
+
               </p>
+
 
             </div>
 
 
+
+
             <!-- Small ID Photo -->
+
             <div class="id-photo-column">
 
+
               <div class="id-photo-frame">
+
 
                 <img
                   class="id-photo"
@@ -189,222 +311,495 @@
                   "
                 >
 
+
                 <div class="id-photo-placeholder">
 
+
                   <span class="id-placeholder-title">
+
                     ID PHOTO
+
                   </span>
 
+
                   <span class="id-placeholder-message">
-                    Upload<br>
+
+                    Upload
+                    <br>
                     id-photo.jpg
+
                   </span>
+
 
                 </div>
 
+
               </div>
 
+
             </div>
+
 
           </div>
 
 
+
+
           <!-- Research Interests -->
+
           <p class="profile-research">
-            Continuum Robots · Medical Robotics<br>
+
+            Continuum Robots · Medical Robotics
+            <br>
             Shape-Morphing Mechanisms · Smart Actuators
+
           </p>
 
 
+
+
           <!-- Contact and CV -->
+
           <div class="profile-contact-information">
+
 
             <div class="contact-information-row">
 
+
               <span>
+
                 Email
+
               </span>
 
-              <a href="mailto:yjh54280@korea.ac.kr">
+
+              <a
+                href="mailto:yjh54280@korea.ac.kr"
+              >
+
                 yjh54280@korea.ac.kr
+
               </a>
+
 
             </div>
 
 
+
+
             <div class="contact-information-row">
 
+
               <span>
+
                 CV
+
               </span>
+
 
               <a
                 href="cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+
                 Curriculum Vitae ↗
+
               </a>
 
+
             </div>
+
 
           </div>
 
+
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- Education -->
+
+
+
+    <!-- ==================================================== -->
+    <!-- EDUCATION                                            -->
+    <!-- ==================================================== -->
+
     <section class="resume-section">
 
-      <div class="profile-container resume-grid">
+
+      <div
+        class="
+          profile-container
+          resume-grid
+        "
+      >
+
 
         <div class="resume-heading">
 
+
           <p>
+
             BACKGROUND
+
           </p>
 
+
           <h2>
+
             Education
+
           </h2>
+
 
         </div>
 
 
+
+
         <div class="resume-list">
 
+
           <!-- Korea University -->
+
           <article class="resume-item">
 
+
             <div class="resume-date">
+
               2026 — Present
+
             </div>
+
 
             <div class="resume-details">
 
+
               <h3>
+
                 M.S. Student in Mechanical Engineering
+
               </h3>
 
+
               <p class="resume-organization">
+
                 Korea University
+
               </p>
+
 
             </div>
 
+
           </article>
+
+
 
 
           <!-- Konkuk University -->
+
           <article class="resume-item">
 
+
             <div class="resume-date">
+
               2019 — Feb. 2026
+
             </div>
+
 
             <div class="resume-details">
 
+
               <h3>
+
                 B.S. in Mechanical Engineering
+
               </h3>
 
+
               <p class="resume-organization">
+
                 Konkuk University
+
               </p>
+
 
             </div>
 
+
           </article>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- Awards -->
-    <section class="resume-section resume-section-alt">
 
-      <div class="profile-container resume-grid">
+
+
+    <!-- ==================================================== -->
+    <!-- AWARDS                                               -->
+    <!-- ==================================================== -->
+
+    <section
+      class="
+        resume-section
+        resume-section-alt
+      "
+    >
+
+
+      <div
+        class="
+          profile-container
+          resume-grid
+        "
+      >
+
 
         <div class="resume-heading">
 
+
           <p>
+
             RECOGNITION
+
           </p>
 
+
           <h2>
+
             Awards
+
           </h2>
 
+
         </div>
+
+
 
 
         <div class="resume-list">
 
+
           <article class="resume-item">
 
+
             <div class="resume-date">
+
               2026
+
             </div>
+
 
             <div class="resume-details">
 
+
               <h3>
+
                 Junior Fellowship Research Grant (JFR) Recipient
+
               </h3>
 
+
               <p class="resume-organization">
+
                 Korea University Graduate School
+
               </p>
+
 
             </div>
 
+
           </article>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- Publications -->
+
+
+
+    <!-- ==================================================== -->
+    <!-- PUBLICATIONS                                         -->
+    <!-- ==================================================== -->
+
     <section class="resume-section">
 
-      <div class="profile-container resume-grid">
+
+      <div
+        class="
+          profile-container
+          resume-grid
+        "
+      >
+
 
         <div class="resume-heading">
 
+
           <p>
+
             RESEARCH OUTPUT
+
           </p>
 
+
           <h2>
+
             Publications
+
           </h2>
+
 
         </div>
 
 
+
+
         <div class="resume-list">
 
-          <article class="resume-item publication-item">
+
+
+          <!-- ================================================== -->
+          <!-- Publication 01 : MORPH                             -->
+          <!-- ================================================== -->
+
+          <article
+            class="
+              resume-item
+              publication-item
+            "
+          >
+
 
             <div class="resume-date">
+
               JOURNAL
+
             </div>
+
 
             <div class="resume-details">
 
+
               <h3>
+
+                MORPH: MR-fluid Operated Reconfigurable Programmable
+                Haptic Grip Interface for Bidirectional and Multimodal
+                Grasping Interaction in Telerobotics and XR
+
+              </h3>
+
+
+              <p class="resume-organization">
+
+                Advanced Intelligent Systems
+
+              </p>
+
+
+              <div
+                style="
+                  margin-top: 10px;
+                "
+              >
+
+
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 5px 11px;
+
+                    border:
+                      1px solid #68a7ff;
+
+                    border-radius:
+                      999px;
+
+                    color:
+                      #68a7ff;
+
+                    font-size:
+                      0.72rem;
+
+                    line-height:
+                      1;
+
+                    font-weight:
+                      800;
+
+                    letter-spacing:
+                      0.08em;
+                  "
+                >
+
+                  UNDER REVIEW
+
+                </span>
+
+
+              </div>
+
+
+            </div>
+
+
+          </article>
+
+
+
+
+          <!-- ================================================== -->
+          <!-- Publication 02 : Photography Automation            -->
+          <!-- ================================================== -->
+
+          <article
+            class="
+              resume-item
+              publication-item
+            "
+          >
+
+
+            <div class="resume-date">
+
+              JOURNAL
+
+            </div>
+
+
+            <div class="resume-details">
+
+
+              <h3>
+
                 Development of a Portable Commerce Photography
                 Automation Robot
+
 
                 <a
                   href="https://doi.org/10.7736/JKSPE.025.00021"
@@ -418,152 +813,343 @@
                     overflow-wrap: anywhere;
                   "
                 >
+
                   (https://doi.org/10.7736/JKSPE.025.00021)
+
                 </a>
+
+
               </h3>
 
+
               <p class="resume-organization">
+
                 Journal of the Korean Society for
                 Precision Engineering (JKSPE)
+
               </p>
+
 
             </div>
 
+
           </article>
+
 
         </div>
 
+
       </div>
+
 
     </section>
 
 
-    <!-- Skills -->
-    <section class="resume-section resume-section-alt">
 
-      <div class="profile-container resume-grid">
+
+
+    <!-- ==================================================== -->
+    <!-- SKILLS                                               -->
+    <!-- ==================================================== -->
+
+    <section
+      class="
+        resume-section
+        resume-section-alt
+      "
+    >
+
+
+      <div
+        class="
+          profile-container
+          resume-grid
+        "
+      >
+
 
         <div class="resume-heading">
 
+
           <p>
+
             TECHNICAL
+
           </p>
 
+
           <h2>
+
             Skills
+
           </h2>
 
+
         </div>
+
+
 
 
         <div class="skills-list">
 
-          <div class="skill-item">
-            <span>01</span>
-            <p>CAD</p>
-          </div>
 
           <div class="skill-item">
-            <span>02</span>
-            <p>Autodesk Inventor</p>
+
+            <span>
+
+              01
+
+            </span>
+
+            <p>
+
+              CAD
+
+            </p>
+
           </div>
 
-          <div class="skill-item">
-            <span>03</span>
-            <p>CATIA</p>
-          </div>
+
 
           <div class="skill-item">
-            <span>04</span>
-            <p>Fusion 360</p>
+
+            <span>
+
+              02
+
+            </span>
+
+            <p>
+
+              Autodesk Inventor
+
+            </p>
+
           </div>
 
+
+
           <div class="skill-item">
-            <span>05</span>
-            <p>Additive Manufacturing</p>
+
+            <span>
+
+              03
+
+            </span>
+
+            <p>
+
+              CATIA
+
+            </p>
+
           </div>
+
+
+
+          <div class="skill-item">
+
+            <span>
+
+              04
+
+            </span>
+
+            <p>
+
+              Fusion 360
+
+            </p>
+
+          </div>
+
+
+
+          <div class="skill-item">
+
+            <span>
+
+              05
+
+            </span>
+
+            <p>
+
+              Additive Manufacturing
+
+            </p>
+
+          </div>
+
 
         </div>
 
+
       </div>
 
+
     </section>
+
 
   </main>
 
 
-  <!-- Footer -->
+
+
+
+  <!-- ====================================================== -->
+  <!-- FOOTER                                                 -->
+  <!-- ====================================================== -->
+
   <footer>
 
-    <div class="container footer-inner">
+
+    <div
+      class="
+        container
+        footer-inner
+      "
+    >
+
 
       <p>
+
         © 2026 Jaehyun Yoon
+
       </p>
+
 
       <div class="footer-navigation">
 
+
         <a href="index.html">
+
           Home
+
         </a>
 
+
         <a href="#top">
+
           Back to top ↑
+
         </a>
+
 
       </div>
 
+
     </div>
+
 
   </footer>
 
 
-  <!-- Theme Switching Script -->
-  <script>
-    const rootElement = document.documentElement;
 
-    const themeButtons = document.querySelectorAll(
-      ".theme-option"
-    );
+
+
+  <!-- ====================================================== -->
+  <!-- THEME SWITCHING SCRIPT                                 -->
+  <!-- ====================================================== -->
+
+  <script>
+
+
+    const rootElement =
+      document.documentElement;
+
+
+    const themeButtons =
+      document.querySelectorAll(
+        ".theme-option"
+      );
+
+
 
     function applyTheme(theme) {
-      if (theme !== "light" && theme !== "dark") {
+
+
+      if (
+        theme !== "light" &&
+        theme !== "dark"
+      ) {
+
         return;
+
       }
+
 
       rootElement.setAttribute(
         "data-theme",
         theme
       );
 
+
       localStorage.setItem(
         "theme",
         theme
       );
 
-      themeButtons.forEach((button) => {
-        const isSelected =
-          button.dataset.themeValue === theme;
 
-        button.setAttribute(
-          "aria-pressed",
-          String(isSelected)
-        );
-      });
+      themeButtons.forEach(
+        (button) => {
+
+
+          const isSelected =
+
+            button.dataset.themeValue ===
+            theme;
+
+
+          button.setAttribute(
+            "aria-pressed",
+            String(isSelected)
+          );
+
+
+        }
+      );
+
+
     }
 
-    themeButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        applyTheme(
-          button.dataset.themeValue
+
+
+    themeButtons.forEach(
+      (button) => {
+
+
+        button.addEventListener(
+          "click",
+          () => {
+
+
+            applyTheme(
+              button.dataset.themeValue
+            );
+
+
+          }
         );
-      });
-    });
+
+
+      }
+    );
+
+
 
     applyTheme(
-      rootElement.getAttribute("data-theme") || "dark"
+
+      rootElement.getAttribute(
+        "data-theme"
+      ) || "dark"
+
     );
+
+
   </script>
 
+
 </body>
+
 </html>
