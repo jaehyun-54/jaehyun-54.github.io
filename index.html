@@ -92,6 +92,16 @@
 .socials{gap:6px}
 .socials a{padding:6px 10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Click-to-enlarge photos in News & Updates. */
+.news-photo-button{display:block;padding:0;cursor:zoom-in;text-align:inherit}
+.news-photo-button:hover{border-color:var(--accent)}
+.photo-lightbox{width:min(960px,92vw);max-width:92vw;max-height:92dvh;padding:48px 16px 16px;border:1px solid var(--line);border-radius:16px;background:var(--paper);color:var(--ink);box-shadow:0 24px 80px #0006;overflow:auto}
+.photo-lightbox::backdrop{background:rgba(0,0,0,.76)}
+.photo-lightbox-close{position:absolute;top:9px;right:12px;width:32px;height:32px;border:1px solid var(--line);border-radius:50%;background:var(--surface);color:var(--ink);font-size:24px;line-height:1}
+.photo-lightbox figure{margin:0}
+.photo-lightbox img{display:block;width:100%;height:auto;max-height:72dvh;object-fit:contain;border-radius:8px}
+.photo-lightbox figcaption{text-align:center;font-size:13px;color:var(--muted);margin-top:10px}
 </style>
 </head>
 <body id="top">
@@ -169,17 +179,17 @@
 <section id="news" aria-labelledby="news-title">
 <h2 id="news-title">News &amp; Updates</h2>
 <article class="project-row">
-<div class="project-thumb">
+<button class="project-thumb news-photo-button" type="button" aria-haspopup="dialog" aria-label="Enlarge photo">
 <img loading="lazy" class="autoever-photo" src="images/hyundai-autoever-mentoring.png" alt="Hyundai AutoEver mentoring program" >
-</div>
+</button>
 <div class="project-copy">
 <p class="project-category"> SMART MOBILITY · INDUSTRY MENTORING </p> <h3> Hyundai AutoEver Smart Mobility Mentoring Program </h3> <p> Participated in an engineering mentoring program focused on smart mobility, practical problem solving, and project development. </p> <ul class="project-tags"> <li> Smart Mobility </li> <li> Engineering </li> <li> Mentoring </li> </ul>
 </div>
 </article>
 <article class="project-row">
-<div class="project-thumb">
+<button class="project-thumb news-photo-button" type="button" aria-haspopup="dialog" aria-label="Enlarge photo">
 <img loading="lazy" class="team-kai-photo" src="images/team-kai-autonomous-vehicle.png" alt="Team KAI autonomous mobility project" >
-</div>
+</button>
 <div class="project-copy">
 <p class="project-category"> AUTONOMOUS VEHICLE · MOBILITY </p> <h3> Team KAI Autonomous Mobility Project </h3> <p> Participated in the development and competition activities of an autonomous mobility platform as a member of Team KAI. </p> <ul class="project-tags"> <li> Autonomous Vehicle </li> <li> Mobility </li> <li> Team Project </li> </ul>
 </div>
@@ -281,6 +291,39 @@ window.addEventListener('hashchange', highlightDestination);
 window.addEventListener('resize', updateNav);
 window.addEventListener('load', highlightDestination);
 highlightDestination();
+</script>
+<dialog class="photo-lightbox" id="photo-lightbox" aria-label="Enlarged news photo" aria-describedby="photo-lightbox-caption">
+<button class="photo-lightbox-close" type="button" aria-label="Close photo" autofocus>×</button>
+<figure><img id="photo-lightbox-image" alt=""><figcaption id="photo-lightbox-caption"></figcaption></figure>
+</dialog>
+<script>
+const photoDialog = document.getElementById('photo-lightbox');
+const largePhoto = document.getElementById('photo-lightbox-image');
+const photoCaption = document.getElementById('photo-lightbox-caption');
+let photoTrigger = null;
+let previousOverflow = '';
+document.querySelectorAll('#news .news-photo-button').forEach(button => {
+  const photo = button.querySelector('img');
+  button.setAttribute('aria-label', 'Enlarge photo: ' + photo.alt);
+  button.addEventListener('click', () => {
+    photoTrigger = button;
+    largePhoto.src = photo.currentSrc || photo.src;
+    largePhoto.alt = photo.alt;
+    photoCaption.textContent = photo.alt;
+    previousOverflow = document.body.style.overflow;
+    photoDialog.showModal();
+    document.body.style.overflow = 'hidden';
+  });
+});
+photoDialog.querySelector('.photo-lightbox-close').addEventListener('click', () => photoDialog.close());
+photoDialog.addEventListener('click', event => {
+  if (event.target === photoDialog) photoDialog.close();
+});
+photoDialog.addEventListener('close', () => {
+  document.body.style.overflow = previousOverflow;
+  largePhoto.removeAttribute('src');
+  if (photoTrigger) photoTrigger.focus({ preventScroll: true });
+});
 </script>
 </body>
 </html>
